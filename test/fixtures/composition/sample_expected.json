@@ -1,0 +1,32 @@
+{
+ "photo_id": "29218250def0c4c3f35dc9eec6022337",
+ "height_cm": 160.9,
+ "weight_kg": 61.95,
+ "age": 30,
+ "sex": 0,
+ "measurements": {
+  "waist": 80.3,
+  "bicep": 28.8,
+  "hip": 97.9,
+  "chest": 93.7,
+  "thigh": 52.4
+ },
+ "composition": {
+  "bodyfat_pct": {
+   "estimate": 34.1,
+   "low": 28.3,
+   "high": 39.7
+  },
+  "alm_kg": {
+   "estimate": 17.2,
+   "low": 14.4,
+   "high": 18.9
+  }
+ },
+ "ground_truth": {
+  "waist": 80.6,
+  "hip": 98.1,
+  "chest": 97.7,
+  "thigh": 52.0
+ }
+}

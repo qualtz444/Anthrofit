@@ -1,0 +1,527 @@
+﻿Resolving dependencies...
+Downloading packages...
+  clock 1.1.2 (1.1.3 available)
+  cupertino_icons 1.0.9 (2.0.0 available)
+  matcher 0.12.19 (0.12.20 available)
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.0 (1.19.0 available)
+  shared_preferences 2.5.5 (2.5.6 available)
+  stack_trace 1.12.1 (1.12.2 available)
+  test_api 0.7.11 (0.7.14 available)
+  vector_math 2.2.0 (2.4.3 available)
+Got dependencies!
+9 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart
+00:00 +0: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +2: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +4: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +5: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +6: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +7: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +8: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +9: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +10: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +11: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +12: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +13: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +14: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +15: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +16: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +17: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +18: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +19: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +20: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +21: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +22: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +23: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +24: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +25: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +26: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +27: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +28: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +29: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +30: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +31: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +32: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +33: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:00 +34: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:01 +35: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:01 +36: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:01 +37: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:01 +38: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:01 +39: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode a new install shows Welcome with the three choices
+00:01 +40: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:02 +41: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:02 +42: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:02 +43: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:02 +44: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:02 +45: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:02 +46: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:02 +47: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:02 +48: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:02 +49: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:02 +50: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:02 +51: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:02 +52: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:02 +53: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:02 +54: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:02 +55: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:02 +56: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:02 +57: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:02 +58: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:02 +59: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:02 +60: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:03 +61: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:03 +62: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:03 +63: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:03 +64: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:03 +65: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:03 +66: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:03 +67: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:03 +68: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:03 +69: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:03 +70: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:03 +71: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:03 +72: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:03 +73: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:04 +74: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:04 +75: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:04 +76: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:04 +77: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:04 +78: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:04 +79: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:04 +80: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:05 +81: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:05 +82: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:05 +83: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:05 +84: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:05 +85: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:06 +86: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:06 +87: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:06 +88: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:06 +89: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:06 +90: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:06 +91: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: Home no program: says so and offers to create one
+00:07 +92: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/exercise_management_test.dart: managing exercises on screen the Program tab offers Manage exercises
+00:07 +93: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/exercise_management_test.dart: managing exercises on screen the Program tab offers Manage exercises
+00:08 +94: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/exercise_management_test.dart: managing exercises on screen the Program tab offers Manage exercises
+00:09 +95: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: the Library on screen it opens, and holds Programs and Exercises
+00:09 +96: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: the Library on screen it opens, and holds Programs and Exercises
+00:10 +97: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode guest mode and guest data survive a restart
+00:10 +98: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode guest mode and guest data survive a restart
+00:10 +99: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode guest mode and guest data survive a restart
+00:10 +100: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode guest mode and guest data survive a restart
+00:10 +101: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode guest mode and guest data survive a restart
+00:10 +102: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode guest mode and guest data survive a restart
+00:10 +103: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode guest mode and guest data survive a restart
+00:10 +104: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode guest mode and guest data survive a restart
+00:10 +105: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode guest mode and guest data survive a restart
+00:10 +106: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/auth_screens_test.dart: Welcome and guest mode guest mode and guest data survive a restart
+00:10 +107: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/history_progress_test.dart: History and Progress screens history: calendar, day panel, list, and detail
+00:10 +108: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/history_progress_test.dart: History and Progress screens history: calendar, day panel, list, and detail
+00:10 +109: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/history_progress_test.dart: History and Progress screens history: calendar, day panel, list, and detail
+00:10 +110: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/history_progress_test.dart: History and Progress screens history: calendar, day panel, list, and detail
+00:10 +111: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/history_progress_test.dart: History and Progress screens history: calendar, day panel, list, and detail
+00:10 +112: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/history_progress_test.dart: History and Progress screens history: calendar, day panel, list, and detail
+00:10 +113: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/history_progress_test.dart: History and Progress screens history: calendar, day panel, list, and detail
+00:10 +114: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/history_progress_test.dart: History and Progress screens history: calendar, day panel, list, and detail
+00:10 +115: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/history_progress_test.dart: History and Progress screens history: calendar, day panel, list, and detail
+00:10 +116: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/history_progress_test.dart: History and Progress screens history: calendar, day panel, list, and detail
+00:10 +117: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/history_progress_test.dart: History and Progress screens history: calendar, day panel, list, and detail
+00:10 +118: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/history_progress_test.dart: History and Progress screens history: calendar, day panel, list, and detail
+00:11 +119: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/history_progress_test.dart: History and Progress screens history: calendar, day panel, list, and detail
+00:11 +120: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/history_progress_test.dart: History and Progress screens history: calendar, day panel, list, and detail
+00:11 +121: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/history_progress_test.dart: History and Progress screens history: calendar, day panel, list, and detail
+00:12 +122: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/history_progress_test.dart: History and Progress screens history: calendar, day panel, list, and detail
+00:12 +123: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/exercise_management_test.dart: managing exercises on screen an exercise can be added with chips, not typing
+00:12 +124: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/exercise_management_test.dart: managing exercises on screen an exercise can be added with chips, not typing
+00:13 +125: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/exercise_management_test.dart: managing exercises on screen an exercise can be added with chips, not typing
+00:13 +126: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/exercise_management_test.dart: managing exercises on screen an exercise can be added with chips, not typing
+00:13 +127: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/exercise_management_test.dart: managing exercises on screen an exercise can be added with chips, not typing
+00:13 +128: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/exercise_management_test.dart: managing exercises on screen an exercise can be added with chips, not typing
+00:13 +129: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/exercise_management_test.dart: managing exercises on screen an exercise can be added with chips, not typing
+00:13 +130: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/exercise_management_test.dart: managing exercises on screen an exercise can be added with chips, not typing
+00:14 +131: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/exercise_management_test.dart: managing exercises on screen an exercise can be added with chips, not typing
+00:14 +132: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/exercise_management_test.dart: managing exercises on screen an exercise can be added with chips, not typing
+00:15 +133: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/exercise_management_test.dart: managing exercises on screen an exercise can be added with chips, not typing
+00:15 +134: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/exercise_management_test.dart: managing exercises on screen an exercise can be added with chips, not typing
+00:15 +135: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/exercise_management_test.dart: managing exercises on screen an exercise can be added with chips, not typing
+00:15 +136: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/exercise_management_test.dart: managing exercises on screen an exercise can be added with chips, not typing
+00:16 +137: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/exercise_management_test.dart: managing exercises on screen an exercise can be added with chips, not typing
+00:16 +138: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/exercise_management_test.dart: managing exercises on screen an exercise can be added with chips, not typing
+00:17 +139: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/exercise_management_test.dart: managing exercises on screen an exercise can be added with chips, not typing
+00:18 +140: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a new exercise shows 3 Working sets and each can be changed
+00:18 +141: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a new exercise shows 3 Working sets and each can be changed
+00:19 +142: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a new exercise shows 3 Working sets and each can be changed
+00:19 +143: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a new exercise shows 3 Working sets and each can be changed
+00:20 +144: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/history_progress_test.dart: History and Progress screens a workout finished in a session appears in history and progress, and survives restart
+00:20 +145: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/history_progress_test.dart: History and Progress screens a workout finished in a session appears in history and progress, and survives restart
+00:21 +146: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/history_progress_test.dart: History and Progress screens a workout finished in a session appears in history and progress, and survives restart
+00:21 +147: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/history_progress_test.dart: History and Progress screens a workout finished in a session appears in history and progress, and survives restart
+00:21 +148: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/history_progress_test.dart: History and Progress screens a workout finished in a session appears in history and progress, and survives restart
+00:21 +149: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/exercise_management_test.dart: managing exercises on screen a new exercise needs a name, a muscle and equipment
+00:21 +150: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:23 +151: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:23 +152: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:23 +153: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:24 +154: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:24 +155: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:24 +156: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:24 +157: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:24 +158: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:24 +159: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:24 +160: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:24 +161: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:24 +162: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:24 +163: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:24 +164: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:24 +165: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:24 +166: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:24 +167: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:25 +168: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:25 +169: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:25 +170: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:25 +171: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:25 +172: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:25 +173: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:26 +174: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:26 +175: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens warm-up, working and failure sets with their own values
+00:26 +176: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: the whole baseline, start to finish profile, program, workout, restart, history, progress, edit, resume
+00:27 +177: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: the whole baseline, start to finish profile, program, workout, restart, history, progress, edit, resume
+00:27 +178: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: the whole baseline, start to finish profile, program, workout, restart, history, progress, edit, resume
+00:27 +179: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: the whole baseline, start to finish profile, program, workout, restart, history, progress, edit, resume
+00:27 +180: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: the whole baseline, start to finish profile, program, workout, restart, history, progress, edit, resume
+00:28 +181: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: the whole baseline, start to finish profile, program, workout, restart, history, progress, edit, resume
+ΓòÉΓòÉΓòí EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK Γò₧ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+The following assertion was thrown running a test:
+The finder "Found 0 widgets with type "ChoiceChip" that are ancestors of widgets with text "Upper
+A": []" (used in a call to "tap()") could not find any matching widgets.
+
+When the exception was thrown, this was the stack:
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2095:7)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1947:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1080:7)
+#3      main.<anonymous closure>.<anonymous closure> (file:///C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart:439:20)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1952:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  profile, program, workout, restart, history, progress, edit, resume
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+00:30 +181 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a working set needs reps, a failure set does not
+00:30 +181 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: the whole baseline, start to finish profile, program, workout, restart, history, progress, edit, resume [E]
+  Test failed. See exception logs above.
+  The test description was: profile, program, workout, restart, history, progress, edit, resume
+  
+00:30 +182 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a working set needs reps, a failure set does not
+00:31 +183 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a working set needs reps, a failure set does not
+00:32 +184 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens a program with no days or workouts cannot be saved
+00:32 +185 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program
+00:32 +186 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program
+00:32 +187 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program
+00:32 +188 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program
+00:32 +189 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program
+00:32 +190 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program
+00:32 +191 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program
+00:32 +192 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program
+00:32 +193 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program
+00:32 +194 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program
+00:32 +195 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program
+00:32 +196 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program
+00:32 +197 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program
+00:32 +198 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program
+00:33 +199 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program
+00:33 +200 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program
+00:33 +201 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program
+00:33 +202 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program
+00:33 +203 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program
+00:33 +204 -1: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program
+ΓòÉΓòÉΓòí EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK Γò₧ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+The following assertion was thrown running a test:
+The finder "Found 0 widgets with text "Program" descending from widgets with type "NavigationBar":
+[]" (used in a call to "tap()") could not find any matching widgets.
+
+When the exception was thrown, this was the stack:
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2095:7)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1947:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1080:7)
+#3      main.<anonymous closure>.tapAndSettle (file:///C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart:206:20)
+#4      main.<anonymous closure>.<anonymous closure> (file:///C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart:298:13)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1952:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  more exercises join the same custom-workout program
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+00:33 +204 -2: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/profile_test.dart: Profile setup a completed form opens the app and is remembered on restart
+00:33 +204 -2: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program [E]
+  Test failed. See exception logs above.
+  The test description was: more exercises join the same custom-workout program
+  
+00:34 +205 -2: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/profile_test.dart: Profile setup a completed form opens the app and is remembered on restart
+00:34 +206 -2: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +207 -2: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +208 -2: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +209 -2: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +210 -2: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +211 -2: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +212 -2: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +213 -2: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +214 -2: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +215 -2: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +216 -2: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +217 -2: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +218 -2: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +219 -2: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +220 -2: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +221 -2: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +221 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +221 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/program_recommender_test.dart: proportions with thresholds supplied, a scan does change the ranking [E]
+  Expected: non-empty
+    Actual: WhereIterable<RecommendedExercise>:[]
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test\program_recommender_test.dart 270:7            main.<fn>.<fn>
+  
+00:35 +222 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +223 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +224 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +225 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +226 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:35 +227 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:36 +228 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:36 +229 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:36 +230 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:36 +231 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a set can be removed, but the last one cannot
+00:37 +232 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:37 +233 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:37 +234 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:37 +235 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:37 +236 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:37 +237 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:37 +238 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:37 +239 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:37 +240 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:37 +241 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:37 +242 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:37 +243 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:37 +244 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:37 +245 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:37 +246 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:37 +247 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:38 +248 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:38 +249 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:38 +250 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:38 +251 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:38 +252 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:38 +253 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:38 +254 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:38 +255 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:38 +256 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:38 +257 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:38 +258 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:38 +259 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:39 +260 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:39 +261 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:39 +262 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:39 +263 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:39 +264 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:39 +265 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:39 +266 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:39 +267 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:39 +268 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:39 +269 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:39 +270 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:39 +271 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:39 +272 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:39 +273 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:39 +274 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:39 +275 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:39 +276 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:39 +277 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:39 +278 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:40 +279 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:40 +280 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +281 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +282 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +283 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +284 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +285 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +286 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +287 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +288 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +289 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +290 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +291 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +292 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +293 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +294 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +295 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +296 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +297 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +298 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +299 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +300 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +301 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +302 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +303 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +304 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +305 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +306 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +307 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +308 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +309 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +310 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens added exercises get default values that can be edited
+00:41 +311 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/program_setup_test.dart: the setup wizard one question per page, in order, starting from the profile
+00:42 +312 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/program_setup_test.dart: the setup wizard one question per page, in order, starting from the profile
+00:43 +313 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/program_setup_test.dart: the setup wizard one question per page, in order, starting from the profile
+00:43 +314 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/program_state_test.dart: Home follows the active program activating one from its status shows its workout
+00:44 +315 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens planned sets show in Workout Detail and Exercise Detail, and survive restart
+00:44 +316 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens planned sets show in Workout Detail and Exercise Detail, and survive restart
+00:44 +317 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens planned sets show in Workout Detail and Exercise Detail, and survive restart
+00:44 +318 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens planned sets show in Workout Detail and Exercise Detail, and survive restart
+00:44 +319 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens planned sets show in Workout Detail and Exercise Detail, and survive restart
+00:45 +320 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens planned sets show in Workout Detail and Exercise Detail, and survive restart
+00:45 +321 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens planned sets show in Workout Detail and Exercise Detail, and survive restart
+00:45 +322 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens planned sets show in Workout Detail and Exercise Detail, and survive restart
+00:45 +323 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens plan a program, save it, see it after restart, edit it, then delete it
+00:45 +324 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens plan a program, save it, see it after restart, edit it, then delete it
+00:45 +325 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens plan a program, save it, see it after restart, edit it, then delete it
+00:45 +326 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens plan a program, save it, see it after restart, edit it, then delete it
+00:45 +327 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planning_test.dart: Planning screens plan a program, save it, see it after restart, edit it, then delete it
+00:46 +328 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/program_state_test.dart: Home follows the active program activating another says which one it replaces
+00:46 +329 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/program_setup_test.dart: the setup wizard a tap picks a focus and takes all of its muscles
+00:46 +330 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens duplicating creates an independent, inactive copy
+00:47 +331 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens duplicating creates an independent, inactive copy
+00:47 +332 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens duplicating creates an independent, inactive copy
+00:47 +333 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens duplicating creates an independent, inactive copy
+00:47 +334 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens duplicating creates an independent, inactive copy
+00:48 +335 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens duplicating creates an independent, inactive copy
+00:48 +336 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens duplicating creates an independent, inactive copy
+00:48 +337 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a session follows each set: type, target, prefill, rest, and saves the types
+00:48 +338 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a session follows each set: type, target, prefill, rest, and saves the types
+00:48 +339 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a session follows each set: type, target, prefill, rest, and saves the types
+00:48 +340 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a session follows each set: type, target, prefill, rest, and saves the types
+00:48 +341 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a session follows each set: type, target, prefill, rest, and saves the types
+00:48 +342 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a session follows each set: type, target, prefill, rest, and saves the types
+00:48 +343 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a session follows each set: type, target, prefill, rest, and saves the types
+00:48 +344 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a session follows each set: type, target, prefill, rest, and saves the types
+00:48 +345 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a session follows each set: type, target, prefill, rest, and saves the types
+00:48 +346 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a session follows each set: type, target, prefill, rest, and saves the types
+00:48 +347 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a session follows each set: type, target, prefill, rest, and saves the types
+00:48 +348 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a session follows each set: type, target, prefill, rest, and saves the types
+00:48 +349 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a session follows each set: type, target, prefill, rest, and saves the types
+00:48 +350 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a session follows each set: type, target, prefill, rest, and saves the types
+00:48 +351 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a session follows each set: type, target, prefill, rest, and saves the types
+00:48 +352 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a session follows each set: type, target, prefill, rest, and saves the types
+00:48 +353 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/planned_sets_test.dart: screens a session follows each set: type, target, prefill, rest, and saves the types
+00:48 +354 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/program_state_test.dart: Home follows the active program deactivating from the status empties Home
+00:48 +355 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/program_setup_test.dart: the setup wizard long-pressing a focus opens its muscles and keeps the choice
+00:48 +356 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens deleting asks first, then removes only that program
+00:48 +357 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens deleting asks first, then removes only that program
+00:49 +358 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens deleting asks first, then removes only that program
+00:49 +359 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:49 +360 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:49 +361 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:49 +362 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:50 +363 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:50 +364 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:50 +365 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:50 +366 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:50 +367 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:50 +368 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:50 +369 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:50 +370 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:50 +371 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:50 +372 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:50 +373 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:51 +374 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:51 +375 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:51 +376 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:51 +377 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:51 +378 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:51 +379 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:51 +380 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:51 +381 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:51 +382 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:51 +383 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:51 +384 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:51 +385 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:51 +386 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:51 +387 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:51 +388 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:51 +389 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:53 +390 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen full workout: log sets, rest, next exercise, complete, save
+00:53 +391 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens a deleted program does not delete history
+00:53 +392 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens a deleted program does not delete history
+00:53 +393 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens a deleted program does not delete history
+00:53 +394 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens a deleted program does not delete history
+00:53 +395 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens a deleted program does not delete history
+00:53 +396 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens a deleted program does not delete history
+00:53 +397 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens a deleted program does not delete history
+00:53 +398 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens a deleted program does not delete history
+00:53 +399 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens a deleted program does not delete history
+00:53 +400 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens a deleted program does not delete history
+00:53 +401 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens a deleted program does not delete history
+00:53 +402 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens a deleted program does not delete history
+00:53 +403 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens a deleted program does not delete history
+00:53 +404 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/scan_test.dart: the Scan button in the app shell the four tabs still work and Scan sits in the middle
+00:53 +405 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/scan_test.dart: the Scan button in the app shell the four tabs still work and Scan sits in the middle
+00:53 +406 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/scan_test.dart: the Scan button in the app shell the four tabs still work and Scan sits in the middle
+00:53 +407 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/scan_test.dart: the Scan button in the app shell the four tabs still work and Scan sits in the middle
+00:54 +408 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/program_setup_test.dart: the setup wizard Select all and Clear all work inside the picker
+00:54 +409 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen invalid input is explained and nothing is saved
+00:55 +410 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen invalid input is explained and nothing is saved
+00:55 +411 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen invalid input is explained and nothing is saved
+00:55 +412 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/templates_test.dart: creation screens Push Pull Legs creates Push, Pull and Legs, with no days
+00:56 +413 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/templates_test.dart: creation screens Push Pull Legs creates Push, Pull and Legs, with no days
+00:56 +414 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/templates_test.dart: creation screens Push Pull Legs creates Push, Pull and Legs, with no days
+00:56 +415 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/templates_test.dart: creation screens Push Pull Legs creates Push, Pull and Legs, with no days
+00:56 +416 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/templates_test.dart: creation screens Push Pull Legs creates Push, Pull and Legs, with no days
+00:57 +417 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/templates_test.dart: creation screens Push Pull Legs creates Push, Pull and Legs, with no days
+00:57 +418 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/templates_test.dart: creation screens Push Pull Legs creates Push, Pull and Legs, with no days
+00:57 +419 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/templates_test.dart: creation screens Push Pull Legs creates Push, Pull and Legs, with no days
+00:57 +420 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/templates_test.dart: creation screens Push Pull Legs creates Push, Pull and Legs, with no days
+00:58 +421 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/templates_test.dart: creation screens Push Pull Legs creates Push, Pull and Legs, with no days
+00:58 +422 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens create: goal starts as the profile goal, can be overridden, and the profile is not changed
+00:59 +423 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens create: goal starts as the profile goal, can be overridden, and the profile is not changed
+01:00 +424 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens create: goal starts as the profile goal, can be overridden, and the profile is not changed
+01:00 +425 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens create: goal starts as the profile goal, can be overridden, and the profile is not changed
+01:00 +426 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen leaving keeps progress and the workout can be resumed
+01:00 +427 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen leaving keeps progress and the workout can be resumed
+01:01 +428 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/program_setup_test.dart: the setup wizard an unanswered step explains itself and does not move on
+01:02 +429 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/program_setup_test.dart: the setup wizard an unanswered step explains itself and does not move on
+01:02 +430 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/program_setup_test.dart: the setup wizard an unanswered step explains itself and does not move on
+01:02 +431 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/templates_test.dart: creation screens Full Body creates one Full Body workout
+01:03 +432 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/session_test.dart: Workout Session screen a workout can be discarded
+01:03 +433 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/workout_detail_test.dart: Workout Detail tapping an exercise opens its details
+01:03 +434 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/programs_test.dart: screens Custom starts with no workouts
+01:03 +435 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/program_setup_test.dart: the setup wizard a customised focus is what gets saved, not just its name
+01:04 +436 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/program_setup_test.dart: the setup wizard a customised focus is what gets saved, not just its name
+01:05 +437 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/program_setup_test.dart: the setup wizard a customised focus is what gets saved, not just its name
+01:05 +438 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/workout_detail_test.dart: Workout Detail Edit workout reuses the editor, saves, and survives restart
+01:06 +439 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/templates_test.dart: creation screens generated workouts can be renamed, trimmed, extended and removed
+01:06 +440 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/templates_test.dart: creation screens workouts in the planner can be reordered
+01:07 +441 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/templates_test.dart: creation screens a Push workout is named and seeded automatically
+01:07 +442 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/templates_test.dart: creation screens Custom asks for a name and inserts no exercises
+01:08 +443 -3: C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/templates_test.dart: creation screens Cardio is seeded with cardio exercises
+01:08 +444 -3: Some tests failed.
+
+Failing tests:
+  C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/baseline_test.dart: the whole baseline, start to finish profile, program, workout, restart, history, progress, edit, resume
+  C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/library_test.dart: adding an exercise from the library more exercises join the same custom-workout program
+  C:/Users/Benedict/AndroidStudioProjects/Anthrofit/test/program_recommender_test.dart: proportions with thresholds supplied, a scan does change the ranking

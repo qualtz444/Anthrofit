@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "883046037818",
+    "project_id": "anthrofit-50e30",
+    "storage_bucket": "anthrofit-50e30.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883046037818:android:8fd002318263d782bd3803",
+        "android_client_info": {
+          "package_name": "com.example.anthrofit.anthrofit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDthbX8NI6L7HP1Fsy7-7piX2vhI5pR9q4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

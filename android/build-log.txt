@@ -1,0 +1,914 @@
+﻿Initialized native services in: C:\Users\Benedict\.gradle\native
+Initialized jansi services in: C:\Users\Benedict\.gradle\native
+Found daemon DaemonInfo{pid=7900, address=[9fdfc23f-4007-4adf-b977-3ce5ed11f2af port:54418, addresses:[/127.0.0.1]], state=Idle, lastBusy=1791167599691, context=DefaultDaemonContext[uid=8a94050b-586a-45ae-8bb4-a7a1831c897c,javaHome=C:\Program Files\Android\Android Studio\jbr,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=C:\Users\Benedict\.gradle\daemon,pid=7900,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=4G,-XX:ReservedCodeCacheSize=512m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx8G,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+JVM is incompatible.
+Wanted: DaemonRequestContext{jvmCriteria=C:\Users\Benedict\.gradle\jdks\eclipse_adoptium-21-amd64-windows.2 (no JDK specified, using current Java home), daemonOpts=[-XX:MaxMetaspaceSize=4G, -XX:ReservedCodeCacheSize=512m, -XX:+HeapDumpOnOutOfMemoryError, -Xmx8G, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+Actual: DefaultDaemonContext[uid=8a94050b-586a-45ae-8bb4-a7a1831c897c,javaHome=C:\Program Files\Android\Android Studio\jbr,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=C:\Users\Benedict\.gradle\daemon,pid=7900,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=4G,-XX:ReservedCodeCacheSize=512m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx8G,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+Found daemon DaemonInfo{pid=11344, address=[ab67e702-53d3-4e9d-a510-0d18b47f0e07 port:64044, addresses:[/127.0.0.1]], state=Idle, lastBusy=1791211803290, context=DefaultDaemonContext[uid=db159131-d53f-41cb-8cc5-f70af2867d41,javaHome=C:\Program Files\Android\Android Studio1\jbr,javaVersion=25,javaVendor=JetBrains s.r.o.,daemonRegistryDir=C:\Users\Benedict\.gradle\daemon,pid=11344,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=4G,-XX:ReservedCodeCacheSize=512m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx8G,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+JVM is incompatible.
+Wanted: DaemonRequestContext{jvmCriteria=C:\Users\Benedict\.gradle\jdks\eclipse_adoptium-21-amd64-windows.2 (no JDK specified, using current Java home), daemonOpts=[-XX:MaxMetaspaceSize=4G, -XX:ReservedCodeCacheSize=512m, -XX:+HeapDumpOnOutOfMemoryError, -Xmx8G, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+Actual: DefaultDaemonContext[uid=db159131-d53f-41cb-8cc5-f70af2867d41,javaHome=C:\Program Files\Android\Android Studio1\jbr,javaVersion=25,javaVendor=JetBrains s.r.o.,daemonRegistryDir=C:\Users\Benedict\.gradle\daemon,pid=11344,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=4G,-XX:ReservedCodeCacheSize=512m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx8G,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 8432). The daemon log file: C:\Users\Benedict\.gradle\daemon\9.1.0\daemon-8432.out.log
+Starting 2nd build in daemon [uptime: 3 mins 12.656 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 8 GiB, non-heap usage: 3% of 4 GiB]
+Using 12 worker leases.
+Now considering [C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android, C:\Users\Benedict\flutter\packages\flutter_tools\gradle] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Now considering [C:\Users\Benedict\flutter\packages\flutter_tools\gradle, C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android] as hierarchies to watch
+
+> Configure project :gradle
+Evaluating project ':gradle' using build file 'C:\Users\Benedict\flutter\packages\flutter_tools\gradle\build.gradle.kts'.
+Resolved plugin [id: 'org.gradle.java-gradle-plugin']
+Resolved plugin [id: 'org.gradle.groovy']
+Resolved plugin [id: 'org.gradle.kotlin.kotlin-dsl', version: '6.2.0']
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.2.20']
+Build 53ddd733-1ef8-4ba6-ba0b-73a33b2dc0b7 is started
+Using Kotlin Gradle Plugin gradle813 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+WARNING: Unsupported Kotlin plugin version.
+The `embedded-kotlin` and `kotlin-dsl` plugins rely on features of Kotlin `2.2.0` that might work differently than in the requested version `2.2.20`.
+file or directory 'C:\Users\Benedict\flutter\packages\flutter_tools\gradle\src\main\java', not found
+Resolved plugin [id: 'dev.flutter.flutter-plugin-loader', version: '1.0.0']
+Resolved plugin [id: 'com.android.application', version: '9.0.1', apply: false]
+Resolved plugin [id: 'com.google.gms.google-services', version: '4.3.15', apply: false]
+Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.3.20', apply: false]
+Resolve mutations for :gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#262,Execution worker,5,main]) started.
+:gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#262,Execution worker,5,main]) started.
+
+> Task :gradle:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':gradle:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :gradle:compileKotlin (Thread[#262,Execution worker,5,main]) started.
+:gradle:compileKotlin (Thread[#262,Execution worker,5,main]) started.
+
+> Task :gradle:compileKotlin UP-TO-DATE
+Caching disabled for task ':gradle:compileKotlin' because:
+  Build cache is disabled
+Skipping task ':gradle:compileKotlin' as it is up-to-date.
+Resolve mutations for :gradle:compileJava (Thread[#262,Execution worker,5,main]) started.
+:gradle:compileJava (Thread[#262,Execution worker,5,main]) started.
+
+> Task :gradle:compileJava NO-SOURCE
+Skipping task ':gradle:compileJava' as it has no source files and no previous output files.
+Resolve mutations for :gradle:compileGroovy (Thread[#268,Execution worker Thread 7,5,main]) started.
+:gradle:compileGroovy (Thread[#268,Execution worker Thread 7,5,main]) started.
+
+> Task :gradle:compileGroovy NO-SOURCE
+Skipping task ':gradle:compileGroovy' as it has no source files and no previous output files.
+Resolve mutations for :gradle:pluginDescriptors (Thread[#268,Execution worker Thread 7,5,main]) started.
+:gradle:pluginDescriptors (Thread[#268,Execution worker Thread 7,5,main]) started.
+
+> Task :gradle:pluginDescriptors UP-TO-DATE
+Caching disabled for task ':gradle:pluginDescriptors' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle:pluginDescriptors' as it is up-to-date.
+Resolve mutations for :gradle:processResources (Thread[#268,Execution worker Thread 7,5,main]) started.
+:gradle:processResources (Thread[#268,Execution worker Thread 7,5,main]) started.
+
+> Task :gradle:processResources UP-TO-DATE
+Caching disabled for task ':gradle:processResources' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle:processResources' as it is up-to-date.
+Resolve mutations for :gradle:classes (Thread[#268,Execution worker Thread 7,5,main]) started.
+:gradle:classes (Thread[#268,Execution worker Thread 7,5,main]) started.
+
+> Task :gradle:classes UP-TO-DATE
+Skipping task ':gradle:classes' as it has no actions.
+Resolve mutations for :gradle:jar (Thread[#268,Execution worker Thread 7,5,main]) started.
+:gradle:jar (Thread[#268,Execution worker Thread 7,5,main]) started.
+
+> Task :gradle:jar UP-TO-DATE
+Caching disabled for task ':gradle:jar' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle:jar' as it is up-to-date.
+Settings evaluated using settings file 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\settings.gradle.kts'.
+Projects loaded. Root project using build file 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\build.gradle.kts'.
+Included projects: [root project 'android', project ':app', project ':firebase_auth', project ':firebase_core', project ':permission_handler_android', project ':shared_preferences_android']
+
+> Configure project :app
+Evaluating project ':app' using build file 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\build.gradle.kts'.
+Resolved plugin [id: 'com.android.application']
+Resolved plugin [id: 'com.google.gms.google-services']
+Resolved plugin [id: 'dev.flutter.flutter-gradle-plugin']
+WARNING: The option setting 'android.builtInKotlin=false' is deprecated.
+The current default is 'true'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+WARNING: The option setting 'android.newDsl=false' is deprecated.
+The current default is 'true'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+Using default execution profile
+Build d6bd5e24-a23e-4fbd-ac8e-2539dc8756c1 is started
+Using Kotlin Gradle Plugin gradle813 variant
+Using Kotlin Gradle Plugin gradle813 variant
+Using Kotlin Gradle Plugin gradle813 variant
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Benedict\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Benedict\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Benedict\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Benedict\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Benedict\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Benedict\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Benedict\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Benedict\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Benedict\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Benedict\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Benedict\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Benedict\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Benedict\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Benedict\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Benedict\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Benedict\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Benedict\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Benedict\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Benedict\AppData\Local\Android\sdk
+w: Deprecated 'org.jetbrains.kotlin.android' plugin usage
+The 'org.jetbrains.kotlin.android' plugin in project ':app' is no longer required for Kotlin support since AGP 9.0.
+Solution: Remove both `android.builtInKotlin=true` and `android.newDsl=false` from `gradle.properties`, then migrate to built-in Kotlin.
+See https://kotl.in/gradle/agp-built-in-kotlin for more details.
+
+
+> Configure project :
+Evaluating root project 'android' using build file 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\build.gradle.kts'.
+
+> Configure project :firebase_auth
+Evaluating project ':firebase_auth' using build file 'C:\Users\Benedict\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_auth-6.7.0\android\build.gradle'.
+Using default execution profile
+Using Kotlin Gradle Plugin gradle813 variant
+w: Deprecated 'org.jetbrains.kotlin.android' plugin usage
+The 'org.jetbrains.kotlin.android' plugin in project ':firebase_auth' is no longer required for Kotlin support since AGP 9.0.
+Solution: Remove both `android.builtInKotlin=true` and `android.newDsl=false` from `gradle.properties`, then migrate to built-in Kotlin.
+See https://kotl.in/gradle/agp-built-in-kotlin for more details.
+
+
+> Configure project :firebase_core
+Evaluating project ':firebase_core' using build file 'C:\Users\Benedict\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-4.15.0\android\build.gradle'.
+Using default execution profile
+Using Kotlin Gradle Plugin gradle813 variant
+w: Deprecated 'org.jetbrains.kotlin.android' plugin usage
+The 'org.jetbrains.kotlin.android' plugin in project ':firebase_core' is no longer required for Kotlin support since AGP 9.0.
+Solution: Remove both `android.builtInKotlin=true` and `android.newDsl=false` from `gradle.properties`, then migrate to built-in Kotlin.
+See https://kotl.in/gradle/agp-built-in-kotlin for more details.
+
+
+> Configure project :permission_handler_android
+Evaluating project ':permission_handler_android' using build file 'C:\Users\Benedict\AppData\Local\Pub\Cache\hosted\pub.dev\permission_handler_android-14.1.0\android\build.gradle.kts'.
+Resolved plugin [id: 'com.android.library']
+Using default execution profile
+Warning: The plugin permission_handler_android requires Android SDK version 37 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+w: Deprecated 'org.jetbrains.kotlin.android' plugin usage
+The 'org.jetbrains.kotlin.android' plugin in project ':permission_handler_android' is no longer required for Kotlin support since AGP 9.0.
+Solution: Remove both `android.builtInKotlin=true` and `android.newDsl=false` from `gradle.properties`, then migrate to built-in Kotlin.
+See https://kotl.in/gradle/agp-built-in-kotlin for more details.
+
+
+> Configure project :shared_preferences_android
+Evaluating project ':shared_preferences_android' using build file 'C:\Users\Benedict\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.4.28\android\build.gradle.kts'.
+Resolved plugin [id: 'com.android.library']
+Using default execution profile
+.\gradlew : Your project is configured to compile against Android SDK 36, but the following plugin(s) require to be compiled against a higher Android SDK version:
+At line:1 char:1
++ .\gradlew app:compileDebugKotlin --info 2>&1 | Out-File -Encoding utf ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Your project is...id SDK version::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+- permission_handler_android compiles against Android SDK 37
+Fix this issue by compiling against the highest Android SDK version (they are backward compatible).
+Add the following to C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\build.gradle.kts:
+
+    android {
+        compileSdk = 37
+        ...
+    }
+w: Deprecated 'org.jetbrains.kotlin.android' plugin usage
+The 'org.jetbrains.kotlin.android' plugin in project ':shared_preferences_android' is no longer required for Kotlin support since AGP 9.0.
+Solution: Remove both `android.builtInKotlin=true` and `android.newDsl=false` from `gradle.properties`, then migrate to built-in Kotlin.
+See https://kotl.in/gradle/agp-built-in-kotlin for more details.
+
+All projects evaluated.
+WARNING: Your app uses the following plugins that apply Kotlin Gradle Plugin (KGP): firebase_auth, firebase_core
+Future versions of Flutter will fail to build if your app uses plugins that apply KGP.
+
+Please check the changelogs of these plugins and upgrade to a version that supports Built-in Kotlin.
+If no such version exists, report the issue to the plugin. If necessary, here is a guide on filing 
+an issue against a plugin: 
+https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers#report-incompatible-kotlin-gradle-plugin-usage-to-plugin-authors
+
+If you are a plugin author, please migrate your plugin to Built-in Kotlin using this guide: 
+https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
+Task path 'app:compileDebugKotlin' matched project ':app'
+Task name matched 'compileDebugKotlin'
+Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugKotlin
+Selected primary task 'compileDebugKotlin' from project :app
+WARNING: We recommend using a newer Android Gradle plugin to use compile SDK version 37.0
+
+This Android Gradle plugin (9.0.1) was tested up to compile SDK version 36.1.
+
+You are strongly encouraged to update your project to use a newer
+Android Gradle plugin that has been tested with compile SDK version 37.0.
+
+If you are already using the latest version of the Android Gradle plugin,
+you may need to wait until a newer version with support for compile SDK version 37.0 is available.
+
+For more information refer to the compatibility table:
+https://d.android.com/r/tools/api-level-support
+
+To suppress this warning, add/update
+    android.suppressUnsupportedCompileSdk=37.0
+to this project's gradle.properties.
+Tasks to be executed: [task ':app:checkKotlinGradlePluginConfigurationErrors', task ':app:cleanMergeDebugAssets', task ':app:compileFlutterBuildDebug', task ':app:generateDebugAssets', task ':app:preBuild', task ':app:preDebugBuild', task ':firebase_auth:generateDebugAssets', task ':firebase_auth:preBuild', task ':firebase_auth:preDebugBuild', task ':firebase_auth:mergeDebugAssets', task ':firebase_core:generateDebugAssets', task ':firebase_core:preBuild', task ':firebase_core:preDebugBuild', task ':firebase_core:mergeDebugAssets', task ':permission_handler_android:generateDebugAssets', task ':permission_handler_android:preBuild', task ':permission_handler_android:preDebugBuild', task ':permission_handler_android:mergeDebugAssets', task ':shared_preferences_android:generateDebugAssets', task ':shared_preferences_android:preBuild', task ':shared_preferences_android:preDebugBuild', task ':shared_preferences_android:mergeDebugAssets', task ':app:mergeDebugAssets', task ':app:copyFlutterAssetsDebug', task ':app:generateDebugResources', task ':app:processDebugGoogleServices', task ':app:packageDebugResources', task ':firebase_auth:processDebugNavigationResources', task ':firebase_core:processDebugNavigationResources', task ':permission_handler_android:processDebugNavigationResources', task ':shared_preferences_android:processDebugNavigationResources', task ':app:processDebugNavigationResources', task ':app:parseDebugLocalResources', task ':app:generateDebugRFile', task ':firebase_auth:checkKotlinGradlePluginConfigurationErrors', task ':firebase_auth:generateDebugBuildConfig', task ':firebase_auth:generateDebugResources', task ':firebase_auth:packageDebugResources', task ':firebase_auth:parseDebugLocalResources', task ':firebase_auth:generateDebugRFile', task ':firebase_core:checkKotlinGradlePluginConfigurationErrors', task ':firebase_core:generateDebugBuildConfig', task ':firebase_core:generateDebugResources', task ':firebase_core:packageDebugResources', task ':firebase_core:parseDebugLocalResources', task ':firebase_core:generateDebugRFile', task ':firebase_core:compileDebugKotlin', task ':firebase_core:javaPreCompileDebug', task ':firebase_core:compileDebugJavaWithJavac', task ':firebase_core:bundleLibCompileToJarDebug', task ':firebase_auth:compileDebugKotlin', task ':firebase_auth:javaPreCompileDebug', task ':firebase_auth:compileDebugJavaWithJavac', task ':firebase_auth:bundleLibCompileToJarDebug', task ':permission_handler_android:checkKotlinGradlePluginConfigurationErrors', task ':permission_handler_android:generateDebugResources', task ':permission_handler_android:packageDebugResources', task ':permission_handler_android:parseDebugLocalResources', task ':permission_handler_android:generateDebugRFile', task ':permission_handler_android:compileDebugKotlin', task ':permission_handler_android:javaPreCompileDebug', task ':permission_handler_android:compileDebugJavaWithJavac', task ':permission_handler_android:bundleLibCompileToJarDebug', task ':shared_preferences_android:checkKotlinGradlePluginConfigurationErrors', task ':shared_preferences_android:generateDebugResources', task ':shared_preferences_android:packageDebugResources', task ':shared_preferences_android:parseDebugLocalResources', task ':shared_preferences_android:generateDebugRFile', task ':shared_preferences_android:compileDebugKotlin', task ':shared_preferences_android:javaPreCompileDebug', task ':shared_preferences_android:compileDebugJavaWithJavac', task ':shared_preferences_android:bundleLibCompileToJarDebug', task ':app:compileDebugKotlin']
+Tasks that were excluded: []
+Resolve mutations for :app:checkKotlinGradlePluginConfigurationErrors (Thread[#265,Execution worker Thread 4,5,main]) started.
+:app:checkKotlinGradlePluginConfigurationErrors (Thread[#265,Execution worker Thread 4,5,main]) started.
+
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':app:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :app:cleanMergeDebugAssets (Thread[#265,Execution worker Thread 4,5,main]) started.
+:app:cleanMergeDebugAssets (Thread[#265,Execution worker Thread 4,5,main]) started.
+
+> Task :app:cleanMergeDebugAssets
+Caching disabled for task ':app:cleanMergeDebugAssets' because:
+  Build cache is disabled
+Task ':app:cleanMergeDebugAssets' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :app:compileFlutterBuildDebug (Thread[#265,Execution worker Thread 4,5,main]) started.
+:app:compileFlutterBuildDebug (Thread[#265,Execution worker Thread 4,5,main]) started.
+
+> Task :app:compileFlutterBuildDebug UP-TO-DATE
+Caching disabled for task ':app:compileFlutterBuildDebug' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':app:compileFlutterBuildDebug' as it is up-to-date.
+Resolve mutations for :app:generateDebugAssets (Thread[#267,Execution worker Thread 6,5,main]) started.
+:app:generateDebugAssets (Thread[#267,Execution worker Thread 6,5,main]) started.
+
+> Task :app:generateDebugAssets UP-TO-DATE
+Skipping task ':app:generateDebugAssets' as it has no actions.
+Resolve mutations for :app:preBuild (Thread[#267,Execution worker Thread 6,5,main]) started.
+:app:preBuild (Thread[#267,Execution worker Thread 6,5,main]) started.
+
+> Task :app:preBuild UP-TO-DATE
+Skipping task ':app:preBuild' as it has no actions.
+Resolve mutations for :app:preDebugBuild (Thread[#261,included builds,5,main]) started.
+:app:preDebugBuild (Thread[#261,included builds,5,main]) started.
+
+> Task :app:preDebugBuild UP-TO-DATE
+Skipping task ':app:preDebugBuild' as it has no actions.
+Resolve mutations for :firebase_auth:generateDebugAssets (Thread[#261,included builds,5,main]) started.
+:firebase_auth:generateDebugAssets (Thread[#261,included builds,5,main]) started.
+
+> Task :firebase_auth:generateDebugAssets UP-TO-DATE
+Skipping task ':firebase_auth:generateDebugAssets' as it has no actions.
+Resolve mutations for :firebase_auth:preBuild (Thread[#261,included builds,5,main]) started.
+:firebase_auth:preBuild (Thread[#261,included builds,5,main]) started.
+
+> Task :firebase_auth:preBuild UP-TO-DATE
+Skipping task ':firebase_auth:preBuild' as it has no actions.
+Resolve mutations for :firebase_auth:preDebugBuild (Thread[#261,included builds,5,main]) started.
+:firebase_auth:preDebugBuild (Thread[#261,included builds,5,main]) started.
+
+> Task :firebase_auth:preDebugBuild UP-TO-DATE
+Skipping task ':firebase_auth:preDebugBuild' as it has no actions.
+Resolve mutations for :firebase_auth:mergeDebugAssets (Thread[#261,included builds,5,main]) started.
+:firebase_auth:mergeDebugAssets (Thread[#272,Execution worker Thread 11,5,main]) started.
+
+> Task :firebase_auth:mergeDebugAssets UP-TO-DATE
+Caching disabled for task ':firebase_auth:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':firebase_auth:mergeDebugAssets' as it is up-to-date.
+work action resolve mergeDebugAssets (project :firebase_auth) (Thread[#261,included builds,5,main]) started.
+Resolve mutations for :firebase_core:generateDebugAssets (Thread[#261,included builds,5,main]) started.
+:firebase_core:generateDebugAssets (Thread[#261,included builds,5,main]) started.
+
+> Task :firebase_core:generateDebugAssets UP-TO-DATE
+Skipping task ':firebase_core:generateDebugAssets' as it has no actions.
+Resolve mutations for :firebase_core:preBuild (Thread[#261,included builds,5,main]) started.
+:firebase_core:preBuild (Thread[#261,included builds,5,main]) started.
+
+> Task :firebase_core:preBuild UP-TO-DATE
+Skipping task ':firebase_core:preBuild' as it has no actions.
+Resolve mutations for :firebase_core:preDebugBuild (Thread[#261,included builds,5,main]) started.
+:firebase_core:preDebugBuild (Thread[#261,included builds,5,main]) started.
+
+> Task :firebase_core:preDebugBuild UP-TO-DATE
+Skipping task ':firebase_core:preDebugBuild' as it has no actions.
+Resolve mutations for :firebase_core:mergeDebugAssets (Thread[#265,Execution worker Thread 4,5,main]) started.
+:firebase_core:mergeDebugAssets (Thread[#265,Execution worker Thread 4,5,main]) started.
+
+> Task :firebase_core:mergeDebugAssets UP-TO-DATE
+Caching disabled for task ':firebase_core:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':firebase_core:mergeDebugAssets' as it is up-to-date.
+work action resolve mergeDebugAssets (project :firebase_core) (Thread[#265,Execution worker Thread 4,5,main]) started.
+Resolve mutations for :permission_handler_android:generateDebugAssets (Thread[#261,included builds,5,main]) started.
+:permission_handler_android:generateDebugAssets (Thread[#261,included builds,5,main]) started.
+
+> Task :permission_handler_android:generateDebugAssets UP-TO-DATE
+Skipping task ':permission_handler_android:generateDebugAssets' as it has no actions.
+Resolve mutations for :permission_handler_android:preBuild (Thread[#261,included builds,5,main]) started.
+:permission_handler_android:preBuild (Thread[#261,included builds,5,main]) started.
+
+> Task :permission_handler_android:preBuild UP-TO-DATE
+Skipping task ':permission_handler_android:preBuild' as it has no actions.
+Resolve mutations for :permission_handler_android:preDebugBuild (Thread[#261,included builds,5,main]) started.
+:permission_handler_android:preDebugBuild (Thread[#261,included builds,5,main]) started.
+
+> Task :permission_handler_android:preDebugBuild UP-TO-DATE
+Skipping task ':permission_handler_android:preDebugBuild' as it has no actions.
+Resolve mutations for :permission_handler_android:mergeDebugAssets (Thread[#261,included builds,5,main]) started.
+:permission_handler_android:mergeDebugAssets (Thread[#261,included builds,5,main]) started.
+
+> Task :permission_handler_android:mergeDebugAssets UP-TO-DATE
+Caching disabled for task ':permission_handler_android:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':permission_handler_android:mergeDebugAssets' as it is up-to-date.
+work action resolve mergeDebugAssets (project :permission_handler_android) (Thread[#261,included builds,5,main]) started.
+Resolve mutations for :shared_preferences_android:generateDebugAssets (Thread[#261,included builds,5,main]) started.
+:shared_preferences_android:generateDebugAssets (Thread[#263,Execution worker Thread 2,5,main]) started.
+
+> Task :shared_preferences_android:generateDebugAssets UP-TO-DATE
+Skipping task ':shared_preferences_android:generateDebugAssets' as it has no actions.
+Resolve mutations for :shared_preferences_android:preBuild (Thread[#261,included builds,5,main]) started.
+:shared_preferences_android:preBuild (Thread[#261,included builds,5,main]) started.
+
+> Task :shared_preferences_android:preBuild UP-TO-DATE
+Skipping task ':shared_preferences_android:preBuild' as it has no actions.
+Resolve mutations for :shared_preferences_android:preDebugBuild (Thread[#261,included builds,5,main]) started.
+:shared_preferences_android:preDebugBuild (Thread[#261,included builds,5,main]) started.
+
+> Task :shared_preferences_android:preDebugBuild UP-TO-DATE
+Skipping task ':shared_preferences_android:preDebugBuild' as it has no actions.
+Resolve mutations for :shared_preferences_android:mergeDebugAssets (Thread[#261,included builds,5,main]) started.
+:shared_preferences_android:mergeDebugAssets (Thread[#261,included builds,5,main]) started.
+
+> Task :shared_preferences_android:mergeDebugAssets UP-TO-DATE
+Caching disabled for task ':shared_preferences_android:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':shared_preferences_android:mergeDebugAssets' as it is up-to-date.
+work action resolve mergeDebugAssets (project :shared_preferences_android) (Thread[#261,included builds,5,main]) started.
+Resolve mutations for :app:mergeDebugAssets (Thread[#261,included builds,5,main]) started.
+:app:mergeDebugAssets (Thread[#261,included builds,5,main]) started.
+
+> Task :app:mergeDebugAssets
+Caching disabled for task ':app:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Task ':app:mergeDebugAssets' is not up-to-date because:
+  Output property 'outputDir' file C:\Users\Benedict\AndroidStudioProjects\Anthrofit\build\app\intermediates\assets\debug\mergeDebugAssets has been removed.
+  Output property 'outputDir' file C:\Users\Benedict\AndroidStudioProjects\Anthrofit\build\app\intermediates\assets\debug\mergeDebugAssets\pose_landmarker_full.task has been removed.
+The input changes require a full rebuild for incremental task ':app:mergeDebugAssets'.
+Resolve mutations for :app:copyFlutterAssetsDebug (Thread[#261,included builds,5,main]) started.
+:app:copyFlutterAssetsDebug (Thread[#261,included builds,5,main]) started.
+
+> Task :app:copyFlutterAssetsDebug
+Caching disabled for task ':app:copyFlutterAssetsDebug' because:
+  Build cache is disabled
+  Not worth caching
+Task ':app:copyFlutterAssetsDebug' is not up-to-date because:
+  Output property 'destinationDir' file C:\Users\Benedict\AndroidStudioProjects\Anthrofit\build\app\intermediates\assets\debug\mergeDebugAssets\flutter_assets has been removed.
+  Output property 'destinationDir' file C:\Users\Benedict\AndroidStudioProjects\Anthrofit\build\app\intermediates\assets\debug\mergeDebugAssets\flutter_assets\AssetManifest.bin has been removed.
+  Output property 'destinationDir' file C:\Users\Benedict\AndroidStudioProjects\Anthrofit\build\app\intermediates\assets\debug\mergeDebugAssets\flutter_assets\FontManifest.json has been removed.
+  and more...
+Resolve mutations for :app:generateDebugResources (Thread[#261,included builds,5,main]) started.
+:app:generateDebugResources (Thread[#261,included builds,5,main]) started.
+
+> Task :app:generateDebugResources UP-TO-DATE
+Caching disabled for task ':app:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugResources' as it is up-to-date.
+Resolve mutations for :app:processDebugGoogleServices (Thread[#261,included builds,5,main]) started.
+:app:processDebugGoogleServices (Thread[#261,included builds,5,main]) started.
+
+> Task :app:processDebugGoogleServices UP-TO-DATE
+Caching disabled for task ':app:processDebugGoogleServices' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':app:processDebugGoogleServices' as it is up-to-date.
+Resolve mutations for :app:packageDebugResources (Thread[#261,included builds,5,main]) started.
+:app:packageDebugResources (Thread[#261,included builds,5,main]) started.
+
+> Task :app:packageDebugResources UP-TO-DATE
+Caching disabled for task ':app:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:packageDebugResources' as it is up-to-date.
+Resolve mutations for :firebase_auth:processDebugNavigationResources (Thread[#261,included builds,5,main]) started.
+:firebase_auth:processDebugNavigationResources (Thread[#261,included builds,5,main]) started.
+
+> Task :firebase_auth:processDebugNavigationResources UP-TO-DATE
+Caching disabled for task ':firebase_auth:processDebugNavigationResources' because:
+  Build cache is disabled
+Skipping task ':firebase_auth:processDebugNavigationResources' as it is up-to-date.
+work action resolve debug (project :firebase_auth) (Thread[#261,included builds,5,main]) started.
+Resolve mutations for :firebase_core:processDebugNavigationResources (Thread[#261,included builds,5,main]) started.
+:firebase_core:processDebugNavigationResources (Thread[#261,included builds,5,main]) started.
+
+> Task :firebase_core:processDebugNavigationResources UP-TO-DATE
+Caching disabled for task ':firebase_core:processDebugNavigationResources' because:
+  Build cache is disabled
+Skipping task ':firebase_core:processDebugNavigationResources' as it is up-to-date.
+work action resolve debug (project :firebase_core) (Thread[#261,included builds,5,main]) started.
+Resolve mutations for :permission_handler_android:processDebugNavigationResources (Thread[#261,included builds,5,main]) started.
+:permission_handler_android:processDebugNavigationResources (Thread[#264,Execution worker Thread 3,5,main]) started.
+
+> Task :permission_handler_android:processDebugNavigationResources UP-TO-DATE
+Caching disabled for task ':permission_handler_android:processDebugNavigationResources' because:
+  Build cache is disabled
+Skipping task ':permission_handler_android:processDebugNavigationResources' as it is up-to-date.
+work action resolve debug (project :permission_handler_android) (Thread[#264,Execution worker Thread 3,5,main]) started.
+Resolve mutations for :shared_preferences_android:processDebugNavigationResources (Thread[#264,Execution worker Thread 3,5,main]) started.
+:shared_preferences_android:processDebugNavigationResources (Thread[#261,included builds,5,main]) started.
+
+> Task :shared_preferences_android:processDebugNavigationResources UP-TO-DATE
+Caching disabled for task ':shared_preferences_android:processDebugNavigationResources' because:
+  Build cache is disabled
+Skipping task ':shared_preferences_android:processDebugNavigationResources' as it is up-to-date.
+work action resolve debug (project :shared_preferences_android) (Thread[#261,included builds,5,main]) started.
+Resolve mutations for :app:processDebugNavigationResources (Thread[#266,Execution worker Thread 5,5,main]) started.
+:app:processDebugNavigationResources (Thread[#266,Execution worker Thread 5,5,main]) started.
+
+> Task :app:processDebugNavigationResources UP-TO-DATE
+Caching disabled for task ':app:processDebugNavigationResources' because:
+  Build cache is disabled
+Skipping task ':app:processDebugNavigationResources' as it is up-to-date.
+Resolve mutations for :app:parseDebugLocalResources (Thread[#266,Execution worker Thread 5,5,main]) started.
+:app:parseDebugLocalResources (Thread[#266,Execution worker Thread 5,5,main]) started.
+
+> Task :app:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':app:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':app:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :app:generateDebugRFile (Thread[#266,Execution worker Thread 5,5,main]) started.
+:app:generateDebugRFile (Thread[#266,Execution worker Thread 5,5,main]) started.
+
+> Task :app:generateDebugRFile UP-TO-DATE
+Caching disabled for task ':app:generateDebugRFile' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugRFile' as it is up-to-date.
+Resolve mutations for :firebase_auth:checkKotlinGradlePluginConfigurationErrors (Thread[#266,Execution worker Thread 5,5,main]) started.
+:firebase_auth:checkKotlinGradlePluginConfigurationErrors (Thread[#266,Execution worker Thread 5,5,main]) started.
+
+> Task :firebase_auth:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':firebase_auth:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :firebase_auth:generateDebugBuildConfig (Thread[#266,Execution worker Thread 5,5,main]) started.
+:firebase_auth:generateDebugBuildConfig (Thread[#266,Execution worker Thread 5,5,main]) started.
+
+> Task :firebase_auth:generateDebugBuildConfig UP-TO-DATE
+Caching disabled for task ':firebase_auth:generateDebugBuildConfig' because:
+  Build cache is disabled
+Skipping task ':firebase_auth:generateDebugBuildConfig' as it is up-to-date.
+Resolve mutations for :firebase_auth:generateDebugResources (Thread[#266,Execution worker Thread 5,5,main]) started.
+:firebase_auth:generateDebugResources (Thread[#266,Execution worker Thread 5,5,main]) started.
+
+> Task :firebase_auth:generateDebugResources UP-TO-DATE
+Caching disabled for task ':firebase_auth:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':firebase_auth:generateDebugResources' as it is up-to-date.
+Resolve mutations for :firebase_auth:packageDebugResources (Thread[#266,Execution worker Thread 5,5,main]) started.
+:firebase_auth:packageDebugResources (Thread[#266,Execution worker Thread 5,5,main]) started.
+
+> Task :firebase_auth:packageDebugResources UP-TO-DATE
+Caching disabled for task ':firebase_auth:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':firebase_auth:packageDebugResources' as it is up-to-date.
+Resolve mutations for :firebase_auth:parseDebugLocalResources (Thread[#266,Execution worker Thread 5,5,main]) started.
+:firebase_auth:parseDebugLocalResources (Thread[#266,Execution worker Thread 5,5,main]) started.
+
+> Task :firebase_auth:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':firebase_auth:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':firebase_auth:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :firebase_auth:generateDebugRFile (Thread[#266,Execution worker Thread 5,5,main]) started.
+:firebase_auth:generateDebugRFile (Thread[#266,Execution worker Thread 5,5,main]) started.
+
+> Task :firebase_auth:generateDebugRFile UP-TO-DATE
+Caching disabled for task ':firebase_auth:generateDebugRFile' because:
+  Build cache is disabled
+Skipping task ':firebase_auth:generateDebugRFile' as it is up-to-date.
+Resolve mutations for :firebase_core:checkKotlinGradlePluginConfigurationErrors (Thread[#266,Execution worker Thread 5,5,main]) started.
+:firebase_core:checkKotlinGradlePluginConfigurationErrors (Thread[#266,Execution worker Thread 5,5,main]) started.
+
+> Task :firebase_core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':firebase_core:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :firebase_core:generateDebugBuildConfig (Thread[#266,Execution worker Thread 5,5,main]) started.
+:firebase_core:generateDebugBuildConfig (Thread[#266,Execution worker Thread 5,5,main]) started.
+
+> Task :firebase_core:generateDebugBuildConfig UP-TO-DATE
+Caching disabled for task ':firebase_core:generateDebugBuildConfig' because:
+  Build cache is disabled
+Skipping task ':firebase_core:generateDebugBuildConfig' as it is up-to-date.
+Resolve mutations for :firebase_core:generateDebugResources (Thread[#266,Execution worker Thread 5,5,main]) started.
+:firebase_core:generateDebugResources (Thread[#266,Execution worker Thread 5,5,main]) started.
+
+> Task :firebase_core:generateDebugResources UP-TO-DATE
+Caching disabled for task ':firebase_core:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':firebase_core:generateDebugResources' as it is up-to-date.
+Resolve mutations for :firebase_core:packageDebugResources (Thread[#266,Execution worker Thread 5,5,main]) started.
+:firebase_core:packageDebugResources (Thread[#266,Execution worker Thread 5,5,main]) started.
+
+> Task :firebase_core:packageDebugResources UP-TO-DATE
+Caching disabled for task ':firebase_core:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':firebase_core:packageDebugResources' as it is up-to-date.
+Resolve mutations for :firebase_core:parseDebugLocalResources (Thread[#266,Execution worker Thread 5,5,main]) started.
+:firebase_core:parseDebugLocalResources (Thread[#266,Execution worker Thread 5,5,main]) started.
+
+> Task :firebase_core:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':firebase_core:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':firebase_core:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :firebase_core:generateDebugRFile (Thread[#266,Execution worker Thread 5,5,main]) started.
+:firebase_core:generateDebugRFile (Thread[#266,Execution worker Thread 5,5,main]) started.
+
+> Task :firebase_core:generateDebugRFile UP-TO-DATE
+Caching disabled for task ':firebase_core:generateDebugRFile' because:
+  Build cache is disabled
+Skipping task ':firebase_core:generateDebugRFile' as it is up-to-date.
+Resolve mutations for :firebase_core:compileDebugKotlin (Thread[#266,Execution worker Thread 5,5,main]) started.
+:firebase_core:compileDebugKotlin (Thread[#266,Execution worker Thread 5,5,main]) started.
+
+> Task :firebase_core:compileDebugKotlin UP-TO-DATE
+Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :firebase_core:compileDebugAndroidTestKotlin
+GradleBuildProject.Builder should not be accessed through AnalyticsConfiguratorService after AnalyticsService is created. Analytics information of this build might be incomplete.
+Caching disabled for task ':firebase_core:compileDebugKotlin' because:
+  Build cache is disabled
+Skipping task ':firebase_core:compileDebugKotlin' as it is up-to-date.
+Resolve mutations for :firebase_core:javaPreCompileDebug (Thread[#266,Execution worker Thread 5,5,main]) started.
+:firebase_core:javaPreCompileDebug (Thread[#266,Execution worker Thread 5,5,main]) started.
+
+> Task :firebase_core:javaPreCompileDebug UP-TO-DATE
+Caching disabled for task ':firebase_core:javaPreCompileDebug' because:
+  Build cache is disabled
+Skipping task ':firebase_core:javaPreCompileDebug' as it is up-to-date.
+Resolve mutations for :firebase_core:compileDebugJavaWithJavac (Thread[#266,Execution worker Thread 5,5,main]) started.
+:firebase_core:compileDebugJavaWithJavac (Thread[#266,Execution worker Thread 5,5,main]) started.
+
+> Task :firebase_core:compileDebugJavaWithJavac UP-TO-DATE
+Custom actions are attached to task ':firebase_core:compileDebugJavaWithJavac'.
+Caching disabled for task ':firebase_core:compileDebugJavaWithJavac' because:
+  Build cache is disabled
+Skipping task ':firebase_core:compileDebugJavaWithJavac' as it is up-to-date.
+No compile result for :firebase_core:compileDebugJavaWithJavac
+No compile result for :firebase_core:compileDebugJavaWithJavac
+No compile result for :firebase_core:compileDebugJavaWithJavac
+No compile result for :firebase_core:compileDebugJavaWithJavac
+Resolve mutations for :firebase_core:bundleLibCompileToJarDebug (Thread[#266,Execution worker Thread 5,5,main]) started.
+:firebase_core:bundleLibCompileToJarDebug (Thread[#266,Execution worker Thread 5,5,main]) started.
+
+> Task :firebase_core:bundleLibCompileToJarDebug UP-TO-DATE
+Caching disabled for task ':firebase_core:bundleLibCompileToJarDebug' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':firebase_core:bundleLibCompileToJarDebug' as it is up-to-date.
+work action resolve classes.jar (project :firebase_core) (Thread[#266,Execution worker Thread 5,5,main]) started.
+Resolve mutations for :firebase_auth:compileDebugKotlin (Thread[#271,Execution worker Thread 10,5,main]) started.
+:firebase_auth:compileDebugKotlin (Thread[#271,Execution worker Thread 10,5,main]) started.
+
+> Task :firebase_auth:compileDebugKotlin UP-TO-DATE
+Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :firebase_auth:compileDebugAndroidTestKotlin
+GradleBuildProject.Builder should not be accessed through AnalyticsConfiguratorService after AnalyticsService is created. Analytics information of this build might be incomplete.
+Caching disabled for task ':firebase_auth:compileDebugKotlin' because:
+  Build cache is disabled
+Skipping task ':firebase_auth:compileDebugKotlin' as it is up-to-date.
+Resolve mutations for :firebase_auth:javaPreCompileDebug (Thread[#271,Execution worker Thread 10,5,main]) started.
+:firebase_auth:javaPreCompileDebug (Thread[#271,Execution worker Thread 10,5,main]) started.
+
+> Task :firebase_auth:javaPreCompileDebug UP-TO-DATE
+Caching disabled for task ':firebase_auth:javaPreCompileDebug' because:
+  Build cache is disabled
+Skipping task ':firebase_auth:javaPreCompileDebug' as it is up-to-date.
+Resolve mutations for :firebase_auth:compileDebugJavaWithJavac (Thread[#271,Execution worker Thread 10,5,main]) started.
+:firebase_auth:compileDebugJavaWithJavac (Thread[#271,Execution worker Thread 10,5,main]) started.
+
+> Task :firebase_auth:compileDebugJavaWithJavac UP-TO-DATE
+Custom actions are attached to task ':firebase_auth:compileDebugJavaWithJavac'.
+Caching disabled for task ':firebase_auth:compileDebugJavaWithJavac' because:
+  Build cache is disabled
+Skipping task ':firebase_auth:compileDebugJavaWithJavac' as it is up-to-date.
+No compile result for :firebase_auth:compileDebugJavaWithJavac
+No compile result for :firebase_auth:compileDebugJavaWithJavac
+No compile result for :firebase_auth:compileDebugJavaWithJavac
+No compile result for :firebase_auth:compileDebugJavaWithJavac
+Resolve mutations for :firebase_auth:bundleLibCompileToJarDebug (Thread[#271,Execution worker Thread 10,5,main]) started.
+:firebase_auth:bundleLibCompileToJarDebug (Thread[#271,Execution worker Thread 10,5,main]) started.
+
+> Task :firebase_auth:bundleLibCompileToJarDebug UP-TO-DATE
+Caching disabled for task ':firebase_auth:bundleLibCompileToJarDebug' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':firebase_auth:bundleLibCompileToJarDebug' as it is up-to-date.
+work action resolve classes.jar (project :firebase_auth) (Thread[#271,Execution worker Thread 10,5,main]) started.
+Resolve mutations for :permission_handler_android:checkKotlinGradlePluginConfigurationErrors (Thread[#271,Execution worker Thread 10,5,main]) started.
+:permission_handler_android:checkKotlinGradlePluginConfigurationErrors (Thread[#271,Execution worker Thread 10,5,main]) started.
+
+> Task :permission_handler_android:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':permission_handler_android:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :permission_handler_android:generateDebugResources (Thread[#271,Execution worker Thread 10,5,main]) started.
+:permission_handler_android:generateDebugResources (Thread[#271,Execution worker Thread 10,5,main]) started.
+
+> Task :permission_handler_android:generateDebugResources UP-TO-DATE
+Caching disabled for task ':permission_handler_android:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':permission_handler_android:generateDebugResources' as it is up-to-date.
+Resolve mutations for :permission_handler_android:packageDebugResources (Thread[#272,Execution worker Thread 11,5,main]) started.
+:permission_handler_android:packageDebugResources (Thread[#272,Execution worker Thread 11,5,main]) started.
+
+> Task :permission_handler_android:packageDebugResources UP-TO-DATE
+Caching disabled for task ':permission_handler_android:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':permission_handler_android:packageDebugResources' as it is up-to-date.
+Resolve mutations for :permission_handler_android:parseDebugLocalResources (Thread[#272,Execution worker Thread 11,5,main]) started.
+:permission_handler_android:parseDebugLocalResources (Thread[#272,Execution worker Thread 11,5,main]) started.
+
+> Task :permission_handler_android:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':permission_handler_android:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':permission_handler_android:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :permission_handler_android:generateDebugRFile (Thread[#272,Execution worker Thread 11,5,main]) started.
+:permission_handler_android:generateDebugRFile (Thread[#272,Execution worker Thread 11,5,main]) started.
+
+> Task :permission_handler_android:generateDebugRFile UP-TO-DATE
+Caching disabled for task ':permission_handler_android:generateDebugRFile' because:
+  Build cache is disabled
+Skipping task ':permission_handler_android:generateDebugRFile' as it is up-to-date.
+Resolve mutations for :permission_handler_android:compileDebugKotlin (Thread[#272,Execution worker Thread 11,5,main]) started.
+:permission_handler_android:compileDebugKotlin (Thread[#272,Execution worker Thread 11,5,main]) started.
+
+> Task :permission_handler_android:compileDebugKotlin NO-SOURCE
+Skipping task ':permission_handler_android:compileDebugKotlin' as it has no source files and no previous output files.
+Resolve mutations for :permission_handler_android:javaPreCompileDebug (Thread[#272,Execution worker Thread 11,5,main]) started.
+:permission_handler_android:javaPreCompileDebug (Thread[#272,Execution worker Thread 11,5,main]) started.
+
+> Task :permission_handler_android:javaPreCompileDebug UP-TO-DATE
+Caching disabled for task ':permission_handler_android:javaPreCompileDebug' because:
+  Build cache is disabled
+Skipping task ':permission_handler_android:javaPreCompileDebug' as it is up-to-date.
+Resolve mutations for :permission_handler_android:compileDebugJavaWithJavac (Thread[#272,Execution worker Thread 11,5,main]) started.
+:permission_handler_android:compileDebugJavaWithJavac (Thread[#272,Execution worker Thread 11,5,main]) started.
+
+> Task :permission_handler_android:compileDebugJavaWithJavac UP-TO-DATE
+Custom actions are attached to task ':permission_handler_android:compileDebugJavaWithJavac'.
+Caching disabled for task ':permission_handler_android:compileDebugJavaWithJavac' because:
+  Build cache is disabled
+Skipping task ':permission_handler_android:compileDebugJavaWithJavac' as it is up-to-date.
+No compile result for :permission_handler_android:compileDebugJavaWithJavac
+No compile result for :permission_handler_android:compileDebugJavaWithJavac
+No compile result for :permission_handler_android:compileDebugJavaWithJavac
+No compile result for :permission_handler_android:compileDebugJavaWithJavac
+Resolve mutations for :permission_handler_android:bundleLibCompileToJarDebug (Thread[#272,Execution worker Thread 11,5,main]) started.
+:permission_handler_android:bundleLibCompileToJarDebug (Thread[#272,Execution worker Thread 11,5,main]) started.
+
+> Task :permission_handler_android:bundleLibCompileToJarDebug UP-TO-DATE
+Caching disabled for task ':permission_handler_android:bundleLibCompileToJarDebug' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':permission_handler_android:bundleLibCompileToJarDebug' as it is up-to-date.
+work action resolve classes.jar (project :permission_handler_android) (Thread[#272,Execution worker Thread 11,5,main]) started.
+Resolve mutations for :shared_preferences_android:checkKotlinGradlePluginConfigurationErrors (Thread[#272,Execution worker Thread 11,5,main]) started.
+:shared_preferences_android:checkKotlinGradlePluginConfigurationErrors (Thread[#272,Execution worker Thread 11,5,main]) started.
+
+> Task :shared_preferences_android:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':shared_preferences_android:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :shared_preferences_android:generateDebugResources (Thread[#268,Execution worker Thread 7,5,main]) started.
+:shared_preferences_android:generateDebugResources (Thread[#268,Execution worker Thread 7,5,main]) started.
+
+> Task :shared_preferences_android:generateDebugResources UP-TO-DATE
+Caching disabled for task ':shared_preferences_android:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':shared_preferences_android:generateDebugResources' as it is up-to-date.
+Resolve mutations for :shared_preferences_android:packageDebugResources (Thread[#268,Execution worker Thread 7,5,main]) started.
+:shared_preferences_android:packageDebugResources (Thread[#268,Execution worker Thread 7,5,main]) started.
+
+> Task :shared_preferences_android:packageDebugResources UP-TO-DATE
+Caching disabled for task ':shared_preferences_android:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':shared_preferences_android:packageDebugResources' as it is up-to-date.
+Resolve mutations for :shared_preferences_android:parseDebugLocalResources (Thread[#272,Execution worker Thread 11,5,main]) started.
+:shared_preferences_android:parseDebugLocalResources (Thread[#272,Execution worker Thread 11,5,main]) started.
+
+> Task :shared_preferences_android:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':shared_preferences_android:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':shared_preferences_android:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :shared_preferences_android:generateDebugRFile (Thread[#272,Execution worker Thread 11,5,main]) started.
+:shared_preferences_android:generateDebugRFile (Thread[#272,Execution worker Thread 11,5,main]) started.
+
+> Task :shared_preferences_android:generateDebugRFile UP-TO-DATE
+Caching disabled for task ':shared_preferences_android:generateDebugRFile' because:
+  Build cache is disabled
+Skipping task ':shared_preferences_android:generateDebugRFile' as it is up-to-date.
+Resolve mutations for :shared_preferences_android:compileDebugKotlin (Thread[#272,Execution worker Thread 11,5,main]) started.
+:shared_preferences_android:compileDebugKotlin (Thread[#272,Execution worker Thread 11,5,main]) started.
+
+> Task :shared_preferences_android:compileDebugKotlin UP-TO-DATE
+Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :shared_preferences_android:compileDebugAndroidTestKotlin
+GradleBuildProject.Builder should not be accessed through AnalyticsConfiguratorService after AnalyticsService is created. Analytics information of this build might be incomplete.
+Caching disabled for task ':shared_preferences_android:compileDebugKotlin' because:
+  Build cache is disabled
+Skipping task ':shared_preferences_android:compileDebugKotlin' as it is up-to-date.
+Resolve mutations for :shared_preferences_android:javaPreCompileDebug (Thread[#272,Execution worker Thread 11,5,main]) started.
+:shared_preferences_android:javaPreCompileDebug (Thread[#272,Execution worker Thread 11,5,main]) started.
+
+> Task :shared_preferences_android:javaPreCompileDebug UP-TO-DATE
+Caching disabled for task ':shared_preferences_android:javaPreCompileDebug' because:
+  Build cache is disabled
+Skipping task ':shared_preferences_android:javaPreCompileDebug' as it is up-to-date.
+Resolve mutations for :shared_preferences_android:compileDebugJavaWithJavac (Thread[#265,Execution worker Thread 4,5,main]) started.
+:shared_preferences_android:compileDebugJavaWithJavac (Thread[#265,Execution worker Thread 4,5,main]) started.
+
+> Task :shared_preferences_android:compileDebugJavaWithJavac NO-SOURCE
+Skipping task ':shared_preferences_android:compileDebugJavaWithJavac' as it has no source files and no previous output files.
+Resolve mutations for :shared_preferences_android:bundleLibCompileToJarDebug (Thread[#272,Execution worker Thread 11,5,main]) started.
+:shared_preferences_android:bundleLibCompileToJarDebug (Thread[#272,Execution worker Thread 11,5,main]) started.
+
+> Task :shared_preferences_android:bundleLibCompileToJarDebug UP-TO-DATE
+Caching disabled for task ':shared_preferences_android:bundleLibCompileToJarDebug' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':shared_preferences_android:bundleLibCompileToJarDebug' as it is up-to-date.
+work action resolve classes.jar (project :shared_preferences_android) (Thread[#272,Execution worker Thread 11,5,main]) started.
+Resolve mutations for :app:compileDebugKotlin (Thread[#265,Execution worker Thread 4,5,main]) started.
+:app:compileDebugKotlin (Thread[#265,Execution worker Thread 4,5,main]) started.
+
+> Task :app:compileDebugKotlin
+Registered task dependencies: app:debugCompileClasspath
+Skipping misunderstood TO dep string: project :firebase_auth
+Skipping misunderstood TO dep string: project :firebase_core
+Skipping misunderstood TO dep string: project :firebase_core
+Skipping misunderstood TO dep string: project :permission_handler_android
+Skipping misunderstood TO dep string: project :shared_preferences_android
+Starting dependency analysis
+Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugAndroidTestKotlin
+GradleBuildProject.Builder should not be accessed through AnalyticsConfiguratorService after AnalyticsService is created. Analytics information of this build might be incomplete.
+Registered task dependencies: app:kotlinCompilerPluginClasspathDebug
+Starting dependency analysis
+Caching disabled for task ':app:compileDebugKotlin' because:
+  Build cache is disabled
+Task ':app:compileDebugKotlin' is not up-to-date because:
+  Task has failed previously.
+The input changes require a full rebuild for incremental task ':app:compileDebugKotlin'.
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\java', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\java', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\java', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\java', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\java', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\java', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\java', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\java', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\java', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\java', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\java', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\java', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\java', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\java', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\java', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\java', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\java', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\kotlin', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\java', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\java', not found
+file or directory 'C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\debug\kotlin', not found
+Kotlin source files: C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\main\kotlin\com\example\anthrofit\CaptureSession.kt, C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\main\kotlin\com\example\anthrofit\MainActivity.kt, C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\main\kotlin\com\example\anthrofit\Measurement.kt, C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\main\kotlin\com\example\anthrofit\PoseLandmarkerHelper.kt, C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\main\kotlin\com\example\anthrofit\ScanPreviewFactory.kt, C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\main\kotlin\com\example\anthrofit\SkeletonOverlay.kt, C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\main\kotlin\com\example\anthrofit\TiltMonitor.kt
+Java source files: C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android\app\src\main\java\io\flutter\plugins\GeneratedPluginRegistrant.java
+Script source files: 
+Script file extensions: 
+Using Kotlin/JVM incremental compilation
+[KOTLIN] Kotlin compilation 'jdkHome' argument: null
+i: Options for KOTLIN DAEMON: IncrementalCompilationOptions(super=CompilationOptions(compilerMode=INCREMENTAL_COMPILER, targetPlatform=JVM, reportCategories=[0], reportSeverity=2, requestedCompilationResults=[0], kotlinScriptExtensions=[], generateCompilerRefIndex=false), sourceChanges=org.jetbrains.kotlin.buildtools.api.SourcesChanges$Unknown@66728e67, classpathChanges=NotAvailableDueToMissingClasspathSnapshot, workingDir=C:\Users\Benedict\AndroidStudioProjects\Anthrofit\build\app\kotlin\compileDebugKotlin\cacheable, multiModuleICSettings=null, icFeatures=IncrementalCompilationFeatures(usePreciseJavaTracking=true, withAbiSnapshot=false, preciseCompilationResultsBackup=true, keepIncrementalCompilationCachesInMemory=true, enableUnsafeIncrementalCompilationForMultiplatform=false, enableMonotonousIncrementalCompileSetExpansion=true), outputFiles=[C:\Users\Benedict\AndroidStudioProjects\Anthrofit\build\app\tmp\kotlin-classes\debug, C:\Users\Benedict\AndroidStudioProjects\Anthrofit\build\app\kotlin\compileDebugKotlin\cacheable, C:\Users\Benedict\AndroidStudioProjects\Anthrofit\build\app\kotlin\compileDebugKotlin\local-state])
+i: Finished executing kotlin compiler using DAEMON strategy
+e: file:///C:/Users/Benedict/AndroidStudioProjects/Anthrofit/android/app/src/main/kotlin/com/example/anthrofit/MainActivity.kt:23:17 Unresolved reference 'ScanPreviewFactory'.
+e: file:///C:/Users/Benedict/AndroidStudioProjects/Anthrofit/android/app/src/main/kotlin/com/example/anthrofit/MainActivity.kt:24:17 Unresolved reference 'ScanPreviewFactory'.
+
+> Task :app:compileDebugKotlin FAILED
+Build 53ddd733-1ef8-4ba6-ba0b-73a33b2dc0b7 is closed
+Build d6bd5e24-a23e-4fbd-ac8e-2539dc8756c1 is closed
+
+[Incubating] Problems report is available at: file:///C:/Users/Benedict/AndroidStudioProjects/Anthrofit/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.btapi.BuildToolsApiCompilationWork
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --debug option to get more log output.
+> Run with --scan to generate a Build Scan (Powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.1.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+55 actionable tasks: 4 executed, 51 up-to-date
+BUILD FAILED in 40s
+Watched directory hierarchies: [C:\Users\Benedict\flutter\packages\flutter_tools\gradle, C:\Users\Benedict\AndroidStudioProjects\Anthrofit\android]
