@@ -157,4 +157,31 @@ class FirebaseAuthService implements AuthService {
       throw _convert(error);
     }
   }
+
+  @override
+  Future<void> confirmPassword(String password) async {
+    final user = _requireAuth.currentUser;
+    final email = user?.email;
+    if (user == null || email == null) {
+      throw const AuthException(AuthErrorCode.unknown);
+    }
+    try {
+      await user.reauthenticateWithCredential(
+        fb.EmailAuthProvider.credential(email: email, password: password),
+      );
+    } catch (error) {
+      throw _convert(error);
+    }
+  }
+
+  @override
+  Future<void> deleteUser() async {
+    final user = _requireAuth.currentUser;
+    if (user == null) throw const AuthException(AuthErrorCode.unknown);
+    try {
+      await user.delete();
+    } catch (error) {
+      throw _convert(error);
+    }
+  }
 }

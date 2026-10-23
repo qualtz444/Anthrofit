@@ -65,6 +65,16 @@ class _MemoryStore extends CompositionVisualStore {
 
   @override
   Future<void> delete(String recordId) async {}
+
+  @override
+  Future<void> deletePhotos(String recordId) async {
+    final v = byId[recordId];
+    if (v == null) return;
+    byId[recordId] = CompositionVisuals(
+      frontOutline: v.frontOutline,
+      sideOutline: v.sideOutline,
+    );
+  }
 }
 
 void main() {
@@ -279,6 +289,8 @@ void main() {
       expect(find.byKey(const ValueKey('scan-outlines')), findsOneWidget);
       expect(find.byKey(const ValueKey('show-scan-photos')), findsNothing);
       expect(find.text('Original photo unavailable'), findsNWidgets(2));
+      // No photos, so nothing to delete.
+      expect(find.byKey(const ValueKey('record-delete-photos')), findsNothing);
 
       await tester.tap(find.byKey(const ValueKey('record-compare')));
       await tester.pumpAndSettle();
@@ -286,6 +298,47 @@ void main() {
       // Opened on this scan and the next one.
       expect(find.text('+0.0 pts'), findsNothing);
       expect(find.text('−2.0 pts'), findsOneWidget);
+    });
+
+    testWidgets('its photos can be deleted, keeping the scan and outline', (
+      tester,
+    ) async {
+      tester.view.physicalSize = const Size(800, 3000);
+      tester.view.devicePixelRatio = 1.0;
+      addTearDown(tester.view.reset);
+      final photo = Uint8List.fromList(_onePixelPng);
+      final store = _MemoryStore({
+        'a': CompositionVisuals(
+          frontOutline: _mask(),
+          sideOutline: _mask(),
+          frontPhoto: photo,
+          sidePhoto: photo,
+        ),
+      });
+      await tester.pumpWidget(
+        MaterialApp(
+          home: CompositionRecordScreen(
+            record: older,
+            allRecords: [older],
+            visualStore: store,
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+
+      await tester.tap(find.byKey(const ValueKey('record-delete-photos')));
+      await tester.pumpAndSettle();
+      expect(find.text('Delete scan photos?'), findsOneWidget);
+      await tester.tap(
+        find.byKey(const ValueKey('record-delete-photos-confirm')),
+      );
+      await tester.pumpAndSettle();
+
+      expect(find.text('Scan photos deleted'), findsOneWidget);
+      expect(store.byId['a']!.hasPhotos, isFalse);
+      expect(find.byKey(const ValueKey('record-delete-photos')), findsNothing);
+      expect(find.byKey(const ValueKey('scan-outlines')), findsOneWidget);
+      expect(find.byKey(const ValueKey('body-fat-ring')), findsOneWidget);
     });
   });
 

@@ -235,6 +235,7 @@ void main() {
       expect(find.text('Sign In'), findsOneWidget);
       expect(find.text('Training profile'), findsOneWidget);
       expect(find.text('Sign Out'), findsNothing);
+      expect(find.byKey(const ValueKey('delete-account')), findsNothing);
     });
 
     testWidgets('Firebase unavailable: Welcome says so and Guest still works', (
@@ -875,6 +876,43 @@ void main() {
         () => ProgramRepository(scope: StorageScope.user('uid_ann')).load(),
       );
       expect(saved!.programs.single.name, 'Ann Plan');
+    });
+
+    testWidgets('Delete Account asks for the password and keeps everything '
+        'when it is wrong', (tester) async {
+      SharedPreferences.setMockInitialValues(
+        _entries(
+          StorageScope.user('uid_ann'),
+          profile: sampleProfile.copyWith(name: 'Ann'),
+          program: _program('a', 'Ann Plan'),
+        ),
+      );
+      useTallScreen(tester);
+      final service = FakeAuthService()
+        ..addAccount('ann@example.com', 's3cretPw')
+        ..startSignedIn('ann@example.com');
+      await launch(tester, service);
+      await openTab(tester, 'Profile');
+
+      await tester.ensureVisible(find.byKey(const ValueKey('delete-account')));
+      await tapAndSettle(tester, find.byKey(const ValueKey('delete-account')));
+      expect(find.text('Delete your account?'), findsOneWidget);
+
+      await tester.enterText(
+        find.byKey(const ValueKey('delete-account-password')),
+        'wrong',
+      );
+      await tapAndSettle(
+        tester,
+        find.byKey(const ValueKey('delete-account-confirm')),
+      );
+      expect(find.text('Incorrect password.'), findsOneWidget);
+      expect(service.calls, isNot(contains('deleteUser')));
+      expect(service.hasAccount('ann@example.com'), isTrue);
+
+      await tapAndSettle(tester, find.text('Cancel'));
+      expect(find.text('Delete your account?'), findsNothing);
+      expect(find.byType(NavigationBar), findsOneWidget);
     });
 
     testWidgets(

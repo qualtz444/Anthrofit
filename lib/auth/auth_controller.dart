@@ -172,6 +172,39 @@ class AuthController extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Deletes the signed-in account for good, in an order that never leaves
+  /// data nobody can reach:
+  ///   1. [password] is checked, so nothing is removed when it is wrong;
+  ///   2. [eraseCloudData] removes what the account saved online, while it
+  ///      is still signed in (the cloud refuses it afterwards);
+  ///   3. the login is deleted;
+  ///   4. the account's data on this phone is removed.
+  /// Throws [AuthException], or what [eraseCloudData] threw, when step 1, 2
+  /// or 3 fails. The account is then still there and can be tried again.
+  Future<void> deleteAccount({
+    required String password,
+    required Future<void> Function(String uid) eraseCloudData,
+  }) async {
+    final uid = _user?.uid;
+    if (uid == null) throw const AuthException(AuthErrorCode.unknown);
+    await service.confirmPassword(password);
+    await eraseCloudData(uid);
+    await service.deleteUser();
+
+    _user = null;
+    _account = null;
+    _migrationPending = false;
+    _notice = null;
+    _status = AuthStatus.signedOut;
+    notifyListeners();
+    try {
+      await _store.eraseLocalData(uid);
+    } catch (_) {
+      // The account is gone either way; what is left is in its own scope,
+      // which no one can sign in to any more.
+    }
+  }
+
   Future<void> resendVerificationEmail() => service.sendVerificationEmail();
 
   /// "I've verified my email": re-read the user from Firebase.

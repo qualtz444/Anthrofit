@@ -10,7 +10,7 @@
 const String kLegalContact = '[your contact email]';
 
 /// When the text below last changed.
-const String kLegalUpdated = 'October 14, 2026';
+const String kLegalUpdated = 'October 23, 2026';
 
 class LegalSection {
   const LegalSection(this.heading, this.body);
@@ -33,6 +33,11 @@ const LegalDocument kTermsOfService = LegalDocument(
           'training programs, estimates body proportions and body '
           'composition from your phone camera, and tracks your workouts. '
           'It is for general fitness only.',
+    ),
+    LegalSection(
+      'Who can use it',
+      'You must be 18 or older to use ANTHROFIT. Setup asks for your date '
+          'of birth to check this, with or without an account.',
     ),
     LegalSection(
       'Not medical advice',
@@ -94,9 +99,10 @@ const LegalDocument kPrivacyPolicy = LegalDocument(
       'The camera',
       'Body scans and the rep counter process the camera image on this '
           'phone. Video is never recorded or uploaded. A body composition '
-          'scan saves your body outline, and the photos it takes, on this '
-          'phone only. Progress photos you take or pick are also saved on '
-          'this phone only. A selfie taken when you share from Progress is '
+          'scan always saves your body outline and its front and side '
+          'photos, on this phone only. You can delete a scan\'s photos, or '
+          'the whole scan, at any time. Progress photos you take or pick are '
+          'also saved on this phone only. A selfie taken when you share from Progress is '
           'used for that post only and is not saved.',
     ),
     LegalSection(
@@ -131,9 +137,17 @@ const LegalDocument kPrivacyPolicy = LegalDocument(
     ),
     LegalSection(
       'Your choices',
-      'You can edit your profile, delete scans, workouts and posts, remove '
-          'friends, and turn reminders off at any time. To have your account '
-          'and the data saved with it deleted, contact $kLegalContact.',
+      'You can edit your profile, delete scans, scan photos, workouts and '
+          'posts, remove friends, and turn reminders off at any time.\n'
+          'To delete your account, go to Profile > Delete Account and enter '
+          'your password. This removes your login; your profile, programs, '
+          'workouts and scan results from Firebase; your posts, friends, '
+          'username and inbox, and your kudos and comments on posts you can '
+          'still see; and everything the account '
+          'saved on this phone. Reports you sent are kept for the project '
+          'team, and notifications already delivered to other people stay in '
+          'their inbox. A guest can remove their data by uninstalling the '
+          'app.',
     ),
     LegalSection(
       'Who sees your data',

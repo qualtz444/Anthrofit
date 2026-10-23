@@ -1,3 +1,6 @@
+import 'dart:io';
+import 'dart:typed_data';
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -7,11 +10,15 @@ import 'package:anthrofit/auth/auth_controller.dart';
 import 'package:anthrofit/auth/auth_errors.dart';
 import 'package:anthrofit/auth/auth_service.dart';
 import 'package:anthrofit/auth/auth_validators.dart';
+import 'package:anthrofit/composition/composition_visuals.dart';
 import 'package:anthrofit/data/profile_repository.dart';
 import 'package:anthrofit/data/program_repository.dart';
 import 'package:anthrofit/data/session_repository.dart';
 import 'package:anthrofit/data/storage_scope.dart';
 import 'package:anthrofit/models/models.dart';
+import 'package:anthrofit/photos/avatar_store.dart';
+import 'package:anthrofit/photos/progress_photo.dart';
+import 'package:anthrofit/photos/progress_photo_store.dart';
 
 import 'test_helpers.dart';
 
@@ -814,4 +821,157 @@ void main() {
       expect((await ProfileRepository(scope: aScope).load()), isNotNull);
     },
   );
+
+  // ---------------------------------------------------------------------
+  group('AuthController: delete account', () {
+    final annScope = StorageScope.user('uid_ann');
+
+    Future<(AuthController, FakeAuthService)> signedInAnn() async {
+      seedFreshInstall();
+      final service = FakeAuthService()
+        ..addAccount('ann@example.com', 's3cretPw');
+      final c = await _start(service);
+      await c.signIn(email: 'ann@example.com', password: 's3cretPw');
+      await _saveData(
+        annScope,
+        profile: sampleProfile,
+        program: _program('a', 'Ann Plan'),
+        completed: _completed('done-a'),
+      );
+      return (c, service);
+    }
+
+    test('a wrong password removes nothing', () async {
+      final (c, service) = await signedInAnn();
+      var erased = false;
+
+      await expectLater(
+        c.deleteAccount(
+          password: 'wrong',
+          eraseCloudData: (_) async => erased = true,
+        ),
+        throwsA(
+          isA<AuthException>().having(
+            (e) => e.code,
+            'code',
+            AuthErrorCode.wrongCredentials,
+          ),
+        ),
+      );
+      expect(erased, isFalse);
+      expect(service.hasAccount('ann@example.com'), isTrue);
+      expect(c.status, AuthStatus.verified);
+      expect(await ProfileRepository(scope: annScope).load(), isNotNull);
+    });
+
+    test('when the cloud data cannot be removed, the login stays', () async {
+      final (c, service) = await signedInAnn();
+
+      await expectLater(
+        c.deleteAccount(
+          password: 's3cretPw',
+          eraseCloudData: (_) async => throw StateError('offline'),
+        ),
+        throwsStateError,
+      );
+      expect(service.calls, isNot(contains('deleteUser')));
+      expect(service.hasAccount('ann@example.com'), isTrue);
+      expect(c.status, AuthStatus.verified);
+    });
+
+    test('removes the cloud data, then the login, then this phone\'s data, '
+        'and leaves other owners alone', () async {
+      final (c, service) = await signedInAnn();
+      await _saveData(
+        StorageScope.guest,
+        profile: sampleProfile,
+        program: _program('g', 'Guest Plan'),
+      );
+      final erasedFor = <String>[];
+
+      await c.deleteAccount(
+        password: 's3cretPw',
+        eraseCloudData: (uid) async {
+          // The login must still exist while the cloud data goes.
+          expect(service.hasAccount('ann@example.com'), isTrue);
+          erasedFor.add(uid);
+        },
+      );
+
+      expect(erasedFor, ['uid_ann']);
+      expect(service.hasAccount('ann@example.com'), isFalse);
+      expect(c.status, AuthStatus.signedOut);
+      expect(c.user, isNull);
+      expect(await ProfileRepository(scope: annScope).load(), isNull);
+      expect(
+        (await ProgramRepository(scope: annScope).load()).programs,
+        isEmpty,
+      );
+      expect(await AccountStore().loadAccount('uid_ann'), isNull);
+      final prefs = await SharedPreferences.getInstance();
+      expect(prefs.getKeys().where((k) => k.startsWith('u.uid_ann.')), isEmpty);
+      // The guest's data on the same phone is untouched.
+      expect(
+        (await ProgramRepository(scope: StorageScope.guest).load())
+            .programs
+            .single
+            .name,
+        'Guest Plan',
+      );
+    });
+
+    test('this phone\'s files for the account go too: scan visuals, progress '
+        'photos and avatar', () async {
+      SharedPreferences.setMockInitialValues({});
+      final dir = await Directory.systemTemp.createTemp('erase_account');
+      addTearDown(() => dir.delete(recursive: true));
+      Future<Directory> base() async => dir;
+      final bytes = Uint8List.fromList([1, 2, 3]);
+
+      await ProfileRepository(scope: annScope).save(
+        sampleProfile.copyWith(
+          compositionLog: [
+            CompositionRecord(
+              id: 'scan-1',
+              takenAt: DateTime(2026, 10, 1),
+              weightKg: 70,
+              bodyFatPct: 20,
+              bodyFatLow: 17,
+              bodyFatHigh: 23,
+              leanLimbKg: 24,
+              fatFreeMassKg: 56,
+              fatMassKg: 14,
+              waistCm: 80,
+              chestCm: 95,
+              hipCm: 95,
+              thighCm: 55,
+              upperArmCm: 30,
+              frameCount: 3,
+            ),
+          ],
+        ),
+      );
+      final visuals = CompositionVisualStore(baseDirectory: base);
+      await visuals.save('scan-1', CompositionVisuals(frontPhoto: bytes));
+      final photos = ProgressPhotoStore(scope: annScope, baseDirectory: base);
+      await photos.add(bytes, pose: PhotoPose.front);
+      await AvatarStore(scope: annScope, baseDirectory: base).save(bytes);
+      final guestAvatar = AvatarStore(
+        scope: StorageScope.guest,
+        baseDirectory: base,
+      );
+      await guestAvatar.save(bytes);
+
+      await AccountStore().eraseLocalData('uid_ann', baseDirectory: base);
+
+      expect((await visuals.load('scan-1')).hasPhotos, isFalse);
+      expect(await photos.load(), isEmpty);
+      expect(
+        await AvatarStore(scope: annScope, baseDirectory: base).load(),
+        isNull,
+      );
+      expect(await ProfileRepository(scope: annScope).load(), isNull);
+      expect(await guestAvatar.load(), bytes);
+    });
+  });
 }

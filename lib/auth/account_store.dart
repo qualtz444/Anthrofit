@@ -1,10 +1,15 @@
+import 'dart:io';
+
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../composition/composition_visuals.dart';
 import '../data/profile_repository.dart';
 import '../data/program_repository.dart';
 import '../data/session_repository.dart';
 import '../data/storage_scope.dart';
 import '../data/stored_json.dart';
+import '../photos/avatar_store.dart';
+import '../photos/progress_photo_store.dart';
 import 'account.dart';
 
 /// Local, non-secret facts about accounts on this device, saved through the
@@ -103,6 +108,44 @@ class AccountStore {
 
     for (final base in copied) {
       await prefs.remove(StorageScope.guest.key(base));
+    }
+  }
+
+  /// Removes everything account [uid] left on this phone, after the account
+  /// was deleted: scan outlines and photos, progress photos, the avatar, and
+  /// every saved item in its scope. Each file step is tried on its own, so
+  /// one that fails never keeps the rest. [baseDirectory] is for tests.
+  Future<void> eraseLocalData(
+    String uid, {
+    Future<Directory> Function()? baseDirectory,
+  }) async {
+    final scope = StorageScope.user(uid);
+    Future<void> attempt(Future<void> Function() step) async {
+      try {
+        await step();
+      } catch (_) {}
+    }
+
+    // Scan visuals are stored by record id, so read the ids first.
+    final profile = await ProfileRepository(scope: scope).load();
+    final visuals = CompositionVisualStore(baseDirectory: baseDirectory);
+    for (final record in profile?.compositionLog ?? const []) {
+      await attempt(() => visuals.delete(record.id));
+    }
+    await attempt(
+      () => ProgressPhotoStore(
+        scope: scope,
+        baseDirectory: baseDirectory,
+      ).deleteAll(),
+    );
+    await attempt(
+      () => AvatarStore(scope: scope, baseDirectory: baseDirectory).delete(),
+    );
+
+    final prefs = await SharedPreferences.getInstance();
+    final prefix = scope.key('');
+    for (final key in prefs.getKeys().toList()) {
+      if (key.startsWith(prefix)) await prefs.remove(key);
     }
   }
 }

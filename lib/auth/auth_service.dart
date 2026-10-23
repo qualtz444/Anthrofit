@@ -69,4 +69,13 @@ abstract class AuthService {
   Future<AuthUser?> reloadUser();
 
   Future<void> sendPasswordReset(String email);
+
+  /// Checks [password] against the signed-in account. Deleting an account
+  /// needs a recent sign-in, so this is called just before [deleteUser].
+  /// Throws [AuthErrorCode.wrongCredentials] when the password is wrong.
+  Future<void> confirmPassword(String password);
+
+  /// Deletes the signed-in account's login. Its data must be removed first:
+  /// once the login is gone, the cloud refuses every request for it.
+  Future<void> deleteUser();
 }

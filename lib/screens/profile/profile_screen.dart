@@ -3,7 +3,12 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
+import '../../auth/auth_controller.dart';
+import '../../auth/auth_errors.dart';
 import '../../auth/auth_scope.dart';
+import '../../auth/auth_service.dart';
+import '../../cloud/cloud_store.dart';
+import '../../cloud/firestore_store.dart';
 import '../../community/community_models.dart';
 import '../../community/community_service.dart';
 import '../../coaching/warm_cool.dart';
@@ -486,6 +491,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
               subtitle: 'Sign out of your account on this device',
               onTap: () => AuthScope.of(context, listen: false).signOut(),
             ),
+            _SettingsTile(
+              key: const ValueKey('delete-account'),
+              icon: Icons.delete_forever_outlined,
+              title: 'Delete Account',
+              subtitle: 'Remove your account and all its data',
+              destructive: true,
+              onTap: () => _deleteAccount(context),
+            ),
           ],
           _SettingsTile(
             key: const ValueKey('profile-legal'),
@@ -591,6 +604,28 @@ class _ProfileScreenState extends State<ProfileScreen> {
     }
   }
 
+  Future<void> _deleteAccount(BuildContext context) async {
+    // The messenger outlives this screen, which closes when the account goes.
+    final messenger = ScaffoldMessenger.of(context);
+    final deleted = await showDialog<bool>(
+      context: context,
+      barrierDismissible: false,
+      builder: (_) => _DeleteAccountDialog(
+        auth: AuthScope.of(context, listen: false),
+        cloudStore: FirestoreStore(),
+      ),
+    );
+    if (deleted == true) {
+      messenger.showSnackBar(
+        const SnackBar(
+          duration: kSnackBarDuration,
+          persist: false,
+          content: Text('Your account was deleted.'),
+        ),
+      );
+    }
+  }
+
   void _editProfile(
     BuildContext context,
     UserProfile profile, [
@@ -662,6 +697,7 @@ class _SettingsTile extends StatelessWidget {
     required this.title,
     required this.subtitle,
     required this.onTap,
+    this.destructive = false,
   });
 
   final IconData icon;
@@ -669,13 +705,19 @@ class _SettingsTile extends StatelessWidget {
   final String subtitle;
   final VoidCallback onTap;
 
+  /// Shown in the error colour, for an action that cannot be undone.
+  final bool destructive;
+
   @override
   Widget build(BuildContext context) {
     final colors = Theme.of(context).colorScheme;
     return ListTile(
       contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-      leading: Icon(icon, color: colors.primary),
-      title: Text(title),
+      leading: Icon(icon, color: destructive ? colors.error : colors.primary),
+      title: Text(
+        title,
+        style: destructive ? TextStyle(color: colors.error) : null,
+      ),
       subtitle: Text(subtitle),
       trailing: const Icon(Icons.chevron_right),
       onTap: onTap,
@@ -875,6 +917,113 @@ class _CommunityCard extends StatelessWidget {
                 MaterialPageRoute<void>(builder: (_) => const CommunityScreen()),
               ),
       ),
+    );
+  }
+}
+
+/// Asks for the password, then deletes the account (see
+/// [AuthController.deleteAccount]). Pops true once it is gone; a failure is
+/// shown in the dialog, which stays open to try again.
+class _DeleteAccountDialog extends StatefulWidget {
+  const _DeleteAccountDialog({required this.auth, required this.cloudStore});
+
+  final AuthController auth;
+  final CloudStore cloudStore;
+
+  @override
+  State<_DeleteAccountDialog> createState() => _DeleteAccountDialogState();
+}
+
+class _DeleteAccountDialogState extends State<_DeleteAccountDialog> {
+  final _password = TextEditingController();
+  bool _busy = false;
+  String? _error;
+
+  @override
+  void dispose() {
+    _password.dispose();
+    super.dispose();
+  }
+
+  Future<void> _delete() async {
+    if (_password.text.isEmpty) {
+      setState(() => _error = 'Enter your password.');
+      return;
+    }
+    setState(() {
+      _busy = true;
+      _error = null;
+    });
+    try {
+      await widget.auth.deleteAccount(
+        password: _password.text,
+        eraseCloudData: (uid) async {
+          await communityService.deleteAccountData(uid);
+          await widget.cloudStore.deleteAll(uid: uid);
+        },
+      );
+      if (mounted) Navigator.of(context).pop(true);
+    } catch (error) {
+      if (!mounted) return;
+      setState(() {
+        _busy = false;
+        _error = error is AuthException &&
+                error.code == AuthErrorCode.wrongCredentials
+            ? 'Incorrect password.'
+            : error is AuthException
+            ? describeAuthError(error, action: 'delete your account')
+            : "Couldn't delete your account. Check your connection and try "
+                  'again.';
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
+    return AlertDialog(
+      title: const Text('Delete your account?'),
+      content: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text(
+            'Your profile, programs, workouts, scans, photos, posts and '
+            'friends are removed from ANTHROFIT and this phone. This cannot '
+            'be undone.',
+          ),
+          const SizedBox(height: 16),
+          TextField(
+            key: const ValueKey('delete-account-password'),
+            controller: _password,
+            obscureText: true,
+            enabled: !_busy,
+            decoration: InputDecoration(
+              labelText: 'Password',
+              errorText: _error,
+            ),
+            onSubmitted: (_) => _delete(),
+          ),
+        ],
+      ),
+      actions: [
+        TextButton(
+          onPressed: _busy ? null : () => Navigator.of(context).pop(false),
+          child: const Text('Cancel'),
+        ),
+        TextButton(
+          key: const ValueKey('delete-account-confirm'),
+          onPressed: _busy ? null : _delete,
+          style: TextButton.styleFrom(foregroundColor: colors.error),
+          child: _busy
+              ? const SizedBox(
+                  width: 18,
+                  height: 18,
+                  child: CircularProgressIndicator(strokeWidth: 2),
+                )
+              : const Text('Delete'),
+        ),
+      ],
     );
   }
 }

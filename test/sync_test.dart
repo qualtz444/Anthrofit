@@ -44,6 +44,12 @@ class FakeCloudStore implements CloudStore {
     docs[_path(uid, key)] = value;
   }
 
+  @override
+  Future<void> deleteAll({required String uid}) async {
+    if (offline) throw StateError('offline');
+    docs.removeWhere((path, _) => path.startsWith('$uid/'));
+  }
+
   /// Puts a document in the cloud as if another device had saved it.
   void seed(String uid, String key, Map<String, dynamic> value, int updatedAt) {
     docs[_path(uid, key)] = {...value, kCloudUpdatedAt: updatedAt};

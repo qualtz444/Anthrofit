@@ -33,4 +33,9 @@ class AvatarStore {
     await file.parent.create(recursive: true);
     await file.writeAsBytes(bytes, flush: true);
   }
+
+  Future<void> delete() async {
+    final file = await _file();
+    if (await file.exists()) await file.delete();
+  }
 }

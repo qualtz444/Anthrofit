@@ -92,6 +92,13 @@ class ProgressPhotoStore {
     ]);
   }
 
+  /// Removes every photo of this owner: the list, then the pictures.
+  Future<void> deleteAll() async {
+    await removeSavedObject(scope.key(storageKey));
+    final dir = await _dir();
+    if (await dir.exists()) await dir.delete(recursive: true);
+  }
+
   /// Removes a photo from the list, then its picture.
   Future<void> delete(String id) async {
     final photos = await load();

@@ -81,7 +81,7 @@ test/                             unit and widget tests
    flutter pub get
    ```
 3. Firebase: `flutterfire configure` for **android** and **web** (web is needed for the admin panel). Enable Email/Password sign-in and Firestore.
-4. Publish `firestore.rules` in Firebase console → Firestore → Rules.
+4. Publish the Firestore security rules in Firebase console → Firestore → Rules. (There is no `firestore.rules` file in this repo; the rules live only in the console.) For Delete Account to work, a signed-in user must be allowed to delete: their own `users/{uid}/data/*`, `publicProfiles/{uid}`, `handles/{handle}` when it holds their uid, `inbox/{uid}/items/*`, `blocks/{uid}/blocked/*`, friend requests from or to them, both sides of their friendships, their own posts and every document under them (`photos`, `kudos`, `comments`), and their own kudos and comments on other posts; and to remove themselves from a challenge's `members` and `progress`.
 5. Firestore indexes: create any index the console asks for (the feed query uses `audience` + `createdAt`).
 6. Optional, faster rep counting: put `pose_landmarker_lite.task` (from the MediaPipe Pose Landmarker models page) in `android/app/src/main/assets/`. Without it the counter uses the full model.
 7. App Check uses the debug provider for development (see `main.dart`); switch to Play Integrity before release.
@@ -161,7 +161,9 @@ Every assumption and limitation is listed in the project's design-assumptions do
 ## Privacy
 
 - Guest mode keeps everything on the phone. With an account, profile, programs, workouts and scan results sync to Firebase.
-- Scan outlines and scan photos stay on the phone. Progress photos stay on the phone unless picked for a Community post, which uploads a smaller copy that only friends can see and that is deleted with the post.
+- Every body composition scan keeps its outline and its front and side photos on the phone (not opt-in). A saved scan's photos can be deleted on their own from the scan screen, or with the whole scan from Body analysis. Progress photos stay on the phone unless picked for a Community post, which uploads a smaller copy that only friends can see and that is deleted with the post.
+- **Delete Account** (Profile, signed in only) asks for the password, then removes the account's Community data (posts with their photos, kudos and comments; its kudos and comments on posts it can still see; friendships on both sides; requests; blocks; inbox; challenge places; username; public profile), its `users/{uid}/data` documents, the Firebase login, and everything it saved on the phone. If a cloud step fails, the login is kept so the user can try again. Reports it sent and notifications already in other people's inboxes are kept.
+- Only adults can use the app: sign-up and profile setup require a date of birth showing 18 or older.
 - Body composition numbers are shared only when ticked for a post.
 - The AI coach receives only the app's own findings, goal and experience level, never names, emails, photos or full history.
 - Video is never recorded.

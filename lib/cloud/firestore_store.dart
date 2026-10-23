@@ -47,4 +47,18 @@ class FirestoreStore implements CloudStore {
     required String key,
     required Map<String, dynamic> value,
   }) => _doc(uid, key).set(value);
+
+  @override
+  Future<void> deleteAll({required String uid}) async {
+    // Every document under users/{uid}/data, whatever its key, then the
+    // parent (which usually does not exist: Firestore makes it implicitly).
+    final user = _db.collection('users').doc(uid);
+    final docs = await user.collection('data').get();
+    final batch = _db.batch();
+    for (final d in docs.docs) {
+      batch.delete(d.reference);
+    }
+    batch.delete(user);
+    await batch.commit();
+  }
 }

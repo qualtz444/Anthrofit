@@ -103,6 +103,15 @@ abstract class CommunityService {
 
   /// Adds a shared workout to every active challenge [uid] is in.
   Future<void> recordWorkout(String uid, DateTime when, int sets);
+
+  /// Removes everything [uid] has in Community, for account deletion: their
+  /// posts with photos, kudos and comments; their kudos and comments on
+  /// friends' posts; friends on both sides; requests; blocks; inbox;
+  /// challenge places; username and public profile. Throws when their posts,
+  /// friends, username or public profile could not be removed. Reports they
+  /// sent are kept for review, and notifications already in other people's
+  /// inboxes stay there.
+  Future<void> deleteAccountData(String uid);
 }
 
 final ValueNotifier<int> communityAvatarChanges = ValueNotifier(0);
@@ -663,6 +672,105 @@ class FirestoreCommunityService implements CommunityService {
     } catch (e) {
       debugPrint('[Community] recordWorkout failed: $e');
     }
+  }
+
+  /// Deletes [refs] in batches, as one batch holds at most 500 writes.
+  Future<void> _deleteAll(
+    Iterable<DocumentReference<Map<String, dynamic>>> refs,
+  ) async {
+    final list = refs.toList();
+    for (var i = 0; i < list.length; i += 400) {
+      final batch = _db.batch();
+      for (final ref in list.skip(i).take(400)) {
+        batch.delete(ref);
+      }
+      await batch.commit();
+    }
+  }
+
+  /// Runs [step], logging instead of throwing: for clean-up that must not
+  /// stop an account deletion.
+  Future<void> _bestEffort(String what, Future<void> Function() step) async {
+    try {
+      await step();
+    } catch (e) {
+      debugPrint('[Community] delete account: $what failed: $e');
+    }
+  }
+
+  @override
+  Future<void> deleteAccountData(String uid) async {
+    // Kudos and comments on friends' posts, while the posts can still be
+    // read (they are found through this account's friendships).
+    await _bestEffort('kudos and comments', () async {
+      final visible = await _posts.where('audience', arrayContains: uid).get();
+      for (final post in visible.docs) {
+        if (post.data()['authorUid'] == uid) continue;
+        final mine = await post.reference
+            .collection('comments')
+            .where('authorUid', isEqualTo: uid)
+            .get();
+        await _deleteAll([
+          post.reference.collection('kudos').doc(uid),
+          for (final c in mine.docs) c.reference,
+        ]);
+      }
+    });
+
+    // Own posts, with everything stored under them.
+    final posts = await _posts.where('authorUid', isEqualTo: uid).get();
+    for (final post in posts.docs) {
+      for (final sub in ['photos', 'kudos', 'comments']) {
+        final docs = await post.reference.collection(sub).get();
+        await _deleteAll([for (final d in docs.docs) d.reference]);
+      }
+      await post.reference.delete();
+    }
+
+    // Friendships, on both sides.
+    final friends = await friendUids(uid);
+    await _deleteAll([
+      for (final f in friends) ...[
+        _friendsOf(uid).doc(f),
+        _friendsOf(f).doc(uid),
+      ],
+    ]);
+
+    await _bestEffort('friend requests', () async {
+      final sent = await _requests.where('fromUid', isEqualTo: uid).get();
+      final received = await _requests.where('toUid', isEqualTo: uid).get();
+      await _deleteAll([
+        for (final d in [...sent.docs, ...received.docs]) d.reference,
+      ]);
+    });
+    await _bestEffort('blocks', () async {
+      final q = await _blocksOf(uid).get();
+      await _deleteAll([for (final d in q.docs) d.reference]);
+    });
+    await _bestEffort('inbox', () async {
+      final q = await _inboxOf(uid).get();
+      await _deleteAll([for (final d in q.docs) d.reference]);
+    });
+    await _bestEffort('challenges', () async {
+      final q = await _challenges.where('members', arrayContains: uid).get();
+      for (final d in q.docs) {
+        await d.reference.update({
+          'members': FieldValue.arrayRemove([uid]),
+          'progress.$uid': FieldValue.delete(),
+        });
+      }
+    });
+
+    // Username and public profile last, so friends see the name until the
+    // posts are gone.
+    final profile = await _db.collection('publicProfiles').doc(uid).get();
+    final handle = profile.data()?['handle'] as String?;
+    await _deleteAll([
+      if (handle != null && handle.isNotEmpty)
+        _db.collection('handles').doc(handle),
+      profile.reference,
+    ]);
+    _invalidateProfile(uid);
   }
 }
 

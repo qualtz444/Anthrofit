@@ -343,6 +343,30 @@ class FakeAuthService implements AuthService {
     _maybeFail();
     passwordResets.add(email);
   }
+
+  @override
+  Future<void> confirmPassword(String password) async {
+    calls.add('confirmPassword');
+    _maybeFail();
+    final account = _accounts[_signedInEmail];
+    if (account == null) throw const AuthException(AuthErrorCode.unknown);
+    if (account.password != password) {
+      throw const AuthException(AuthErrorCode.wrongCredentials);
+    }
+  }
+
+  @override
+  Future<void> deleteUser() async {
+    calls.add('deleteUser');
+    _maybeFail();
+    final email = _signedInEmail;
+    if (email == null) throw const AuthException(AuthErrorCode.unknown);
+    _accounts.remove(email);
+    _signedInEmail = null;
+  }
+
+  /// True while an account with [email] exists.
+  bool hasAccount(String email) => _accounts.containsKey(email.toLowerCase());
 }
 
 // ---------------------------------------------------------------------------

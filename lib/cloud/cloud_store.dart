@@ -21,6 +21,10 @@ abstract class CloudStore {
     required String key,
     required Map<String, dynamic> value,
   });
+
+  /// Deletes every document saved for [uid]. Used when the account is
+  /// deleted. Throws if the cloud could not be reached.
+  Future<void> deleteAll({required String uid});
 }
 
 /// The field every synced document carries, so the newer copy can be told
